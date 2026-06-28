@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "mrspriters:block/totem_side_block",
+    "down": "mrspriters:block/totem_side_block",
+    "up": "mrspriters:block/totem_side_block",
+    "north": "mrspriters:block/totem_angry_block",
+    "east": "mrspriters:block/totem_side_block",
+    "south": "mrspriters:block/totem_side_block",
+    "west": "mrspriters:block/totem_side_block"
+  }
+}

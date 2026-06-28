@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mrspriters:calcite_bricks"
+    }
+  },
+  "result": {
+    "id": "mrspriters:calcite_bricks_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "mrspriters",
+  "version": "0.0.1",
+  "name": "MrSpriters Mod",
+  "description": "Decorative stone expansion",
+  "authors": ["MrSpriters"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mrspriters.mrspriters.MrSpritersMod"
+    ],
+    "client": [
+      "com.mrspriters.mrspriters.ModBlocksClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric": "*",
+    "minecraft": "1.21.1"
+  }
+}

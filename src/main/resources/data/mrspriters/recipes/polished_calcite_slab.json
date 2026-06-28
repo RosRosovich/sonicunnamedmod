@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mrspriters:polished_calcite"
+    }
+  },
+  "result": {
+    "id": "mrspriters:polished_calcite_slab",
+    "count": 6
+  }
+}

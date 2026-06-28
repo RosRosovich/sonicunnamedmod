@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "mrspriters:block/clover_flower_bottom"
+    },
+    "half=upper": {
+      "model": "mrspriters:block/clover_flower_top"
+    }
+  }
+}
