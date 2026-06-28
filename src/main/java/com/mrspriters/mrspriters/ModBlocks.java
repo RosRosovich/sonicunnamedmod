@@ -54,8 +54,6 @@ public class ModBlocks {
                     return null;
                 }
             });
-    public static final Block BASALT_BRICKS = register("basalt_bricks",
-            new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()));
 
     public static final Block GREEN_HILL_DIRT = register("green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.DIRT)));
@@ -88,40 +86,6 @@ public class ModBlocks {
     public static void registerAll() {
         registerFlowerItem();
 
-        Block granite_bricks = register("granite_bricks",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("granite_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(granite_bricks).requiresTool()));
-        register("granite_bricks_stairs", new StairsBlock(granite_bricks.getDefaultState(), AbstractBlock.Settings.copy(granite_bricks).requiresTool()));
-        register("granite_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(granite_bricks).requiresTool()));
 
-        Block calcite_bricks = register("calcite_bricks",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("calcite_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(calcite_bricks).requiresTool()));
-        register("calcite_bricks_stairs", new StairsBlock(calcite_bricks.getDefaultState(), AbstractBlock.Settings.copy(calcite_bricks).requiresTool()));
-        register("calcite_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(calcite_bricks).requiresTool()));
-
-        Block carved_diorite = register("carved_diorite",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("carved_diorite_slab", new SlabBlock(AbstractBlock.Settings.copy(carved_diorite).requiresTool()));
-        register("carved_diorite_stairs", new StairsBlock(carved_diorite.getDefaultState(), AbstractBlock.Settings.copy(carved_diorite).requiresTool()));
-        register("carved_diorite_wall", new WallBlock(AbstractBlock.Settings.copy(carved_diorite).requiresTool()));
-
-        Block andesite_bricks = register("andesite_bricks",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("andesite_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(andesite_bricks).requiresTool()));
-        register("andesite_bricks_stairs", new StairsBlock(andesite_bricks.getDefaultState(), AbstractBlock.Settings.copy(andesite_bricks).requiresTool()));
-        register("andesite_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(andesite_bricks).requiresTool()));
-
-        Block polished_calcite = register("polished_calcite",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("polished_calcite_slab", new SlabBlock(AbstractBlock.Settings.copy(polished_calcite).requiresTool()));
-        register("polished_calcite_stairs", new StairsBlock(polished_calcite.getDefaultState(), AbstractBlock.Settings.copy(polished_calcite).requiresTool()));
-        register("polished_calcite_wall", new WallBlock(AbstractBlock.Settings.copy(polished_calcite).requiresTool()));
-
-        Block diorite_bricks = register("diorite_bricks",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("diorite_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(diorite_bricks).requiresTool()));
-        register("diorite_bricks_stairs", new StairsBlock(diorite_bricks.getDefaultState(), AbstractBlock.Settings.copy(diorite_bricks).requiresTool()));
-        register("diorite_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(diorite_bricks).requiresTool()));
     }
 }
