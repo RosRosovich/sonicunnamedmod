@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "top": "mrspriters:block/green_fill_turf_top",
-    "bottom": "mrspriters:block/green_hill_dirt",
-    "side": "mrspriters:block/green_fill_turf_side"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "sonicunnamedmod:block/clover_flower_bottom"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "sonicunnamedmod:block/green_fill_turf_top",
+    "bottom": "sonicunnamedmod:block/green_hill_dirt",
+    "side": "sonicunnamedmod:block/green_fill_turf_side"
+  }
+}

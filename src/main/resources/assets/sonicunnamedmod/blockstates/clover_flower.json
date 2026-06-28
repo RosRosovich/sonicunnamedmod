@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "sonicunnamedmod:block/clover_flower_bottom"
+    },
+    "half=upper": {
+      "model": "sonicunnamedmod:block/clover_flower_top"
+    }
+  }
+}
