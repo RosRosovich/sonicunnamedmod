@@ -1,5 +1,6 @@
 package com.github.sonicunnamedmod;
 
+import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -43,13 +44,6 @@ public class ModBlocks {
         return block;
     }
 
-    public static void registerFlowerItem() {
-        Identifier id = Identifier.of(SonicUnnamedMod.MOD_ID, "clover_flower");
-        Item flowerItem = Registry.register(Registries.ITEM, id,
-                new TallBlockItem(CLOVER_FLOWER, new Item.Settings()));
-        ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP_KEY).register(entries -> entries.add(flowerItem));
-    }
-
     public static final Block CLOVER_FLOWER = registerWithoutBlockItem("clover_flower",
             new CloverFlowerBlock(AbstractBlock.Settings.copy(Blocks.PEONY).nonOpaque())
     );
@@ -61,7 +55,7 @@ public class ModBlocks {
     );
 
     public static final Block GREEN_HILL_DIRT = register("green_hill_dirt",
-            new GreenHillDirtBlock(AbstractBlock.Settings.copy(Blocks.DIRT)));
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT)));
 
     public static final Block GREEN_HILL_TURF = register("green_hill_turf",
             new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK))
@@ -81,48 +75,36 @@ public class ModBlocks {
 
     public static final Block TOTEM_SURPRISE_BLOCK = register("totem_surprise_block",
             new TotemBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(2.0f)));
-    // Мраморные блоки
-    public static Block MARBLE_BRICKS;
-    public static Block MARBLE_BRICKS_SLAB;
-    public static Block MARBLE_BRICKS_STAIRS;
-    public static Block MARBLE_BRICKS_WALL;
-    public static Block MARBLE_FLAGSTONE;
-    public static Block MARBLE_FLAGSTONE_SLAB;
-    public static Block MARBLE_FLAGSTONE_STAIRS;
-    public static Block MARBLE_FLAGSTONE_WALL;
-    public static Block POLISHED_MARBLE;
-    public static Block POLISHED_MARBLE_SLAB;
-    public static Block POLISHED_MARBLE_STAIRS;
-    public static Block POLISHED_MARBLE_WALL;
-        public static void registerAll() {
-            registerFlowerItem();
 
-            // Marble Blocks
-            MARBLE_FLAGSTONE = register("marble_flagstone",
-                    new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-            MARBLE_FLAGSTONE_SLAB = register("marble_flagstone_slab",
-                    new SlabBlock(AbstractBlock.Settings.copy(MARBLE_FLAGSTONE).requiresTool()));
-            MARBLE_FLAGSTONE_STAIRS = register("marble_flagstone_stairs",
-                    new StairsBlock(MARBLE_FLAGSTONE.getDefaultState(), AbstractBlock.Settings.copy(MARBLE_FLAGSTONE).requiresTool()));
-            MARBLE_FLAGSTONE_WALL = register("marble_flagstone_wall",
-                    new WallBlock(AbstractBlock.Settings.copy(MARBLE_FLAGSTONE).requiresTool()));
-
-            MARBLE_BRICKS = register("marble_bricks",
-                    new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-            MARBLE_BRICKS_SLAB = register("marble_bricks_slab",
-                    new SlabBlock(AbstractBlock.Settings.copy(MARBLE_BRICKS).requiresTool()));
-            MARBLE_BRICKS_STAIRS = register("marble_bricks_stairs",
-                    new StairsBlock(MARBLE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MARBLE_BRICKS).requiresTool()));
-            MARBLE_BRICKS_WALL = register("marble_bricks_wall",
-                    new WallBlock(AbstractBlock.Settings.copy(MARBLE_BRICKS).requiresTool()));
-
-            POLISHED_MARBLE = register("polished_marble",
-                    new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-            POLISHED_MARBLE_SLAB = register("polished_marble_slab",
-                    new SlabBlock(AbstractBlock.Settings.copy(POLISHED_MARBLE).requiresTool()));
-            POLISHED_MARBLE_STAIRS = register("polished_marble_stairs",
-                    new StairsBlock(POLISHED_MARBLE.getDefaultState(), AbstractBlock.Settings.copy(POLISHED_MARBLE).requiresTool()));
-            POLISHED_MARBLE_WALL = register("polished_marble_wall",
-                    new WallBlock(AbstractBlock.Settings.copy(POLISHED_MARBLE).requiresTool()));
-        }
+    public static void registerFlowerItem() {
+        Identifier id = Identifier.of(SonicUnnamedMod.MOD_ID, "clover_flower");
+        Item flowerItem = Registry.register(Registries.ITEM, id,
+                new TallBlockItem(CLOVER_FLOWER, new Item.Settings()));
+        ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP_KEY).register(entries -> entries.add(flowerItem));
     }
+
+    public static void registerAll() {
+        registerFlowerItem();
+
+        //Marble Blocks
+
+        Block marble_bricks = register("marble_bricks",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("marble_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
+        register("marble_bricks_stairs", new StairsBlock(marble_bricks.getDefaultState(), AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
+        register("marble_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
+
+        Block marble_flagstone = register("marble_flagstone",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("marble_flagstone_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
+        register("marble_flagstone_stairs", new StairsBlock(marble_flagstone.getDefaultState(), AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
+        register("marble_flagstone_wall", new WallBlock(AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
+
+        Block polished_marble = register("polished_marble",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
+        register("polished_marble_stairs", new StairsBlock(polished_marble.getDefaultState(), AbstractBlock.Settings.copy(polished_marble).requiresTool()));
+        register("polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
+        
+    }
+}
