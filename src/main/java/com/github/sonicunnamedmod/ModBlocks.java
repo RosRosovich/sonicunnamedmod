@@ -26,7 +26,7 @@ public class ModBlocks {
             ITEM_GROUP_KEY,
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemGroup.sonicunnamedmod.blocks"))
-                    .icon(() -> new ItemStack(Blocks.GRANITE))
+                    .icon(() -> new ItemStack(ModBlocks.GREEN_HILL_TURF))
                     .build()
     );
 
