@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "sonicunnamedmod:block/totem_side_block",
+    "down": "sonicunnamedmod:block/totem_side_block",
+    "up": "sonicunnamedmod:block/totem_side_block",
+    "north": "sonicunnamedmod:block/totem_angry_block",
+    "east": "sonicunnamedmod:block/totem_side_block",
+    "south": "sonicunnamedmod:block/totem_side_block",
+    "west": "sonicunnamedmod:block/totem_side_block"
+  }
+}

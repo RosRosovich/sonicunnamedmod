@@ -1,0 +1,14 @@
+{
+  "itemGroup.sonicunnamedmod.blocks": "SonicUnnamedMod",
+
+  "block.sonicunnamedmod.clover_flower": "Clover Flower",
+  "block.sonicunnamedmod.green_hill_grass": "Green Hill Grass",
+  "block.sonicunnamedmod.basalt_bricks": "Basalt Bricks",
+  "block.sonicunnamedmod.green_hill_dirt": "Green Hill Dirt",
+  "block.sonicunnamedmod.green_hill_turf": "Green Hill Turf",
+  "block.sonicunnamedmod.carved_green_hill_turf": "Carved Green Hill Turf",
+  "block.sonicunnamedmod.totem_angry_block": "Angry Totem Block",
+  "block.sonicunnamedmod.totem_creeper_block": "Creeper Totem Block",
+  "block.sonicunnamedmod.totem_golem_block": "Golem Totem Block",
+  "block.sonicunnamedmod.totem_surprise_block": "Surprise Totem Block"
+}

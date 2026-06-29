@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "mrspriters",
+  "id": "sonicunnamedmod",
   "version": "0.0.1",
-  "name": "MrSpriters Mod",
+  "name": "SonicUnnamed Mod",
   "description": "Decorative stone expansion",
   "authors": ["MrSpriters"],
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.mrspriters.mrspriters.MrSpritersMod"
+      "com.github.sonicunnamedmod.SonicUnnamedMod"
     ],
     "client": [
-      "com.mrspriters.mrspriters.ModBlocksClient"
+      "com.github.sonicunnamedmod.ModBlocksClient"
     ]
   },
   "depends": {

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "sonicunnamedmod:block/totem_golem_block", "y": 0 },
+    "facing=east": { "model": "sonicunnamedmod:block/totem_golem_block", "y": 90 },
+    "facing=south": { "model": "sonicunnamedmod:block/totem_golem_block", "y": 180 },
+    "facing=west": { "model": "sonicunnamedmod:block/totem_golem_block", "y": 270 }
+  }
+}

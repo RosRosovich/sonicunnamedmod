@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "mrspriters:block/clover_flower_top"
-  }
-}
