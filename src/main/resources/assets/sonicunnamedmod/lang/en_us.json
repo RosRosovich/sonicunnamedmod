@@ -10,5 +10,20 @@
   "block.sonicunnamedmod.totem_angry_block": "Angry Totem Block",
   "block.sonicunnamedmod.totem_creeper_block": "Creeper Totem Block",
   "block.sonicunnamedmod.totem_golem_block": "Golem Totem Block",
-  "block.sonicunnamedmod.totem_surprise_block": "Surprise Totem Block"
+  "block.sonicunnamedmod.totem_surprise_block": "Surprise Totem Block",
+
+  "block.sonicunnamedmod.marble_bricks": "Marble Bricks",
+  "block.sonicunnamedmod.marble_bricks_slab": "Marble Bricks Slab",
+  "block.sonicunnamedmod.marble_bricks_stairs": "Marble Bricks Stairs",
+  "block.sonicunnamedmod.marble_bricks_wall": "Marble Bricks Wall",
+
+  "block.sonicunnamedmod.marble_flagstone": "Marble Flagstone",
+  "block.sonicunnamedmod.marble_flagstone_slab": "Marble Flagstone Slab",
+  "block.sonicunnamedmod.marble_flagstone_stairs": "Marble Flagstone Stairs",
+  "block.sonicunnamedmod.marble_flagstone_wall": "Marble Flagstone Wall",
+
+  "block.sonicunnamedmod.polished_marble": "Polished Marble",
+  "block.sonicunnamedmod.polished_marble_slab": "Polished Marble Slab",
+  "block.sonicunnamedmod.polished_marble_stairs": "Polished Marble Stairs",
+  "block.sonicunnamedmod.polished_marble_wall": "Polished Marble Wall"
 }

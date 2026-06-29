@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "sonicunnamedmod:block/marble_bricks",
+    "side": "sonicunnamedmod:block/marble_bricks",
+    "top": "sonicunnamedmod:block/marble_bricks"
+  }
+}

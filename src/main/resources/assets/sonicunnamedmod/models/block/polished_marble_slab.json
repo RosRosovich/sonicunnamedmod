@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "sonicunnamedmod:block/polished_marble",
+    "top": "sonicunnamedmod:block/polished_marble",
+    "side": "sonicunnamedmod:block/polished_marble"
+  }
+}
