@@ -1,5 +1,6 @@
-package com.github.sonicunnamedmod;
+package com.github.sonicunnamedmod.block;
 
+import com.github.sonicunnamedmod.ModBlocks;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;

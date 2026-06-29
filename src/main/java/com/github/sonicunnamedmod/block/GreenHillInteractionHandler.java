@@ -1,4 +1,4 @@
-package com.github.sonicunnamedmod;
+package com.github.sonicunnamedmod.block;
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.item.Items;

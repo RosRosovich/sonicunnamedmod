@@ -1,5 +1,6 @@
 package com.github.sonicunnamedmod;
 
+import com.github.sonicunnamedmod.block.GreenHillInteractionHandler;
 import net.fabricmc.api.ModInitializer;
 
 public class SonicUnnamedMod implements ModInitializer {

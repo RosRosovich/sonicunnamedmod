@@ -1,7 +1,7 @@
-package com.github.sonicunnamedmod;
+package com.github.sonicunnamedmod.block;
 
+import com.github.sonicunnamedmod.ModBlocks;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.TallPlantBlock;
 import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.entity.player.PlayerEntity;

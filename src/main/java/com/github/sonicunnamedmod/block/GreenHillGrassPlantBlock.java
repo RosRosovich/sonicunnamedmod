@@ -1,5 +1,6 @@
-package com.github.sonicunnamedmod;
+package com.github.sonicunnamedmod.block;
 
+import com.github.sonicunnamedmod.ModBlocks;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.PlantBlock;
