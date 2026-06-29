@@ -1,4 +1,3 @@
-
 package com.github.sonicunnamedmod;
 
 import net.fabricmc.api.ModInitializer;
@@ -9,5 +8,6 @@ public class SonicUnnamedMod implements ModInitializer {
     @Override
     public void onInitialize() {
         ModBlocks.registerAll();
+        GreenHillInteractionHandler.register();
     }
 }
