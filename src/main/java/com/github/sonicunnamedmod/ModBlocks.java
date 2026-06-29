@@ -90,21 +90,20 @@ public class ModBlocks {
 
         Block marble_bricks = register("marble_bricks",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("marble_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
         register("marble_bricks_stairs", new StairsBlock(marble_bricks.getDefaultState(), AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
+        register("marble_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
         register("marble_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
 
         Block marble_flagstone = register("marble_flagstone",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("marble_flagstone_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
         register("marble_flagstone_stairs", new StairsBlock(marble_flagstone.getDefaultState(), AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
+        register("marble_flagstone_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
         register("marble_flagstone_wall", new WallBlock(AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
 
         Block polished_marble = register("polished_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
         register("polished_marble_stairs", new StairsBlock(polished_marble.getDefaultState(), AbstractBlock.Settings.copy(polished_marble).requiresTool()));
+        register("polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
         register("polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
-        
     }
 }
