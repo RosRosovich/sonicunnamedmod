@@ -45,21 +45,21 @@ public class ModBlocks {
     }
 
     public static final Block CLOVER_FLOWER = registerWithoutBlockItem("clover_flower",
-            new TallPlantBlock(AbstractBlock.Settings.copy(Blocks.PEONY).nonOpaque()));
+            new CloverFlowerBlock(AbstractBlock.Settings.copy(Blocks.PEONY).nonOpaque())
+    );
 
     public static final Block GREEN_HILL_GRASS = register("green_hill_grass",
-            new PlantBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS).nonOpaque()) {
-                @Override
-                protected MapCodec<? extends PlantBlock> getCodec() {
-                    return null;
-                }
-            });
+            new GreenHillGrassPlantBlock(
+                    AbstractBlock.Settings.copy(Blocks.SHORT_GRASS).nonOpaque()
+            )
+    );
 
     public static final Block GREEN_HILL_DIRT = register("green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.DIRT)));
 
     public static final Block GREEN_HILL_TURF = register("green_hill_turf",
-            new GrassBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK)));
+            new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK))
+    );
 
     public static final Block CARVED_GREEN_HILL_TURF = register("carved_green_hill_turf",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()));
