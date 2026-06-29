@@ -25,5 +25,25 @@
   "block.sonicunnamedmod.polished_marble": "Polished Marble",
   "block.sonicunnamedmod.polished_marble_slab": "Polished Marble Slab",
   "block.sonicunnamedmod.polished_marble_stairs": "Polished Marble Stairs",
-  "block.sonicunnamedmod.polished_marble_wall": "Polished Marble Wall"
+  "block.sonicunnamedmod.polished_marble_wall": "Polished Marble Wall",
+
+  "block.sonicunnamedmod.green_marble_brick": "Green Marble Bricks",
+  "block.sonicunnamedmod.green_marble_brick_slab": "Green Marble Brick Slab",
+  "block.sonicunnamedmod.green_marble_brick_stairs": "Green Marble Brick Stairs",
+  "block.sonicunnamedmod.green_marble_brick_wall": "Green Marble Brick Wall",
+
+  "block.sonicunnamedmod.green_polished_marble": "Green Polished Marble",
+  "block.sonicunnamedmod.green_polished_marble_slab": "Green Polished Marble Slab",
+  "block.sonicunnamedmod.green_polished_marble_stairs": "Green Polished Marble Stairs",
+  "block.sonicunnamedmod.green_polished_marble_wall": "Green Polished Marble Wall",
+
+  "block.sonicunnamedmod.green_marble_tiles": "Green Marble Tiles",
+  "block.sonicunnamedmod.green_marble_tiles_slab": "Green Marble Tiles Slab",
+  "block.sonicunnamedmod.green_marble_tiles_stairs": "Green Marble Tiles Stairs",
+  "block.sonicunnamedmod.green_marble_tiles_wall": "Green Marble Tiles Wall",
+
+  "block.sonicunnamedmod.green_chiseled_marble": "Chiseled Green Marble",
+  "block.sonicunnamedmod.green_chiseled_marble_bricks": "Chiseled Green Marble Bricks",
+  "block.sonicunnamedmod.green_marble_pillar": "Green Marble Pillar",
+  "block.sonicunnamedmod.green_push_marble": "Green Push Marble"
 }
