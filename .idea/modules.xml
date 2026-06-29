@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mrspriters.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mrspriters.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mrspriters.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mrspriters.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/build.gradle.iml" filepath="$PROJECT_DIR$/.idea/build.gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sonicunnamedmod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.test.iml" />
     </modules>
   </component>
 </project>

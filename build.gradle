@@ -4,7 +4,7 @@ plugins {
 }
 
 version = '0.0.1'
-group = 'com.mrspriters'
+group = 'github.sonicunnamedmod'
 
 repositories {
     mavenCentral()
