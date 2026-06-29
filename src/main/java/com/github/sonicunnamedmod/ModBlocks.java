@@ -107,6 +107,36 @@ public class ModBlocks {
         register("polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
         register("polished_marble_stairs", new StairsBlock(polished_marble.getDefaultState(), AbstractBlock.Settings.copy(polished_marble).requiresTool()));
         register("polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
+
+        Block green_marble_brick = register("green_marble_brick",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("green_marble_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(green_marble_brick).requiresTool()));
+        register("green_marble_brick_stairs", new StairsBlock(green_marble_brick.getDefaultState(), AbstractBlock.Settings.copy(green_marble_brick).requiresTool()));
+        register("green_marble_brick_wall", new WallBlock(AbstractBlock.Settings.copy(green_marble_brick).requiresTool()));
+
+        Block green_polished_marble = register("green_polished_marble",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("green_polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(green_polished_marble).requiresTool()));
+        register("green_polished_marble_stairs", new StairsBlock(green_polished_marble.getDefaultState(), AbstractBlock.Settings.copy(green_polished_marble).requiresTool()));
+        register("green_polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(green_polished_marble).requiresTool()));
+
+        Block green_marble_tiles = register("green_marble_tiles",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("green_marble_tiles_slab", new SlabBlock(AbstractBlock.Settings.copy(green_marble_tiles).requiresTool()));
+        register("green_marble_tiles_stairs", new StairsBlock(green_marble_tiles.getDefaultState(), AbstractBlock.Settings.copy(green_marble_tiles).requiresTool()));
+        register("green_marble_tiles_wall", new WallBlock(AbstractBlock.Settings.copy(green_marble_tiles).requiresTool()));
+
+        register("green_chiseled_marble",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+
+        register("green_chiseled_marble_bricks",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+
+        register("green_marble_pillar",
+                new PillarBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+
+        register("green_push_marble",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
         
     }
 }
