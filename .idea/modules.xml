@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/build.gradle.iml" filepath="$PROJECT_DIR$/.idea/build.gradle.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sonicunnamedmod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.test.iml" />
     </modules>

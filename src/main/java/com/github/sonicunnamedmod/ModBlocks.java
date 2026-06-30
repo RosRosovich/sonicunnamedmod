@@ -36,7 +36,6 @@ public class ModBlocks {
         Identifier id = Identifier.of(SonicUnnamedMod.MOD_ID, name);
         Registry.register(Registries.BLOCK, id, block);
         Registry.register(Registries.ITEM, id, new BlockItem(block, new Item.Settings()));
-        ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP_KEY).register(entries -> entries.add(block));
         return block;
     }
 
@@ -66,6 +65,9 @@ public class ModBlocks {
     public static final Block CARVED_GREEN_HILL_TURF = register("carved_green_hill_turf",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()));
 
+    public static final Block CRACKED_GREEN_HILL_TURF = register("cracked_green_hill_turf",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool().strength(1.5f, 6.0f)));
+
     public static final Block TOTEM_ANGRY_BLOCK = register("totem_angry_block",
             new TotemBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(2.0f)));
 
@@ -82,7 +84,6 @@ public class ModBlocks {
         Identifier id = Identifier.of(SonicUnnamedMod.MOD_ID, "clover_flower");
         Item flowerItem = Registry.register(Registries.ITEM, id,
                 new TallBlockItem(CLOVER_FLOWER, new Item.Settings()));
-        ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP_KEY).register(entries -> entries.add(flowerItem));
     }
 
     public static void registerAll() {
@@ -137,6 +138,55 @@ public class ModBlocks {
 
         register("green_push_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        
+
+        ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP_KEY).register(entries -> {
+            entries.add(CLOVER_FLOWER);
+            entries.add(GREEN_HILL_GRASS);
+
+            entries.add(GREEN_HILL_DIRT);
+            entries.add(GREEN_HILL_TURF);
+            entries.add(CRACKED_GREEN_HILL_TURF);
+            entries.add(CARVED_GREEN_HILL_TURF);
+
+            entries.add(TOTEM_ANGRY_BLOCK);
+            entries.add(TOTEM_CREEPER_BLOCK);
+            entries.add(TOTEM_GOLEM_BLOCK);
+            entries.add(TOTEM_SURPRISE_BLOCK);
+
+            entries.add(marble_bricks);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_wall")));
+
+            entries.add(marble_flagstone);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_flagstone_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_flagstone_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_flagstone_wall")));
+
+            entries.add(polished_marble);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_wall")));
+
+            entries.add(green_marble_brick);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_wall")));
+
+            entries.add(green_polished_marble);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_wall")));
+
+            entries.add(green_marble_tiles);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_tiles_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_tiles_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_tiles_wall")));
+
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_chiseled_marble")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_chiseled_marble_bricks")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_pillar")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_push_marble")));
+        });
     }
 }

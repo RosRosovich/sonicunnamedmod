@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_green_polished_marble": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sonicunnamedmod:green_polished_marble"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sonicunnamedmod:green_polished_marble_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_green_polished_marble",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sonicunnamedmod:green_polished_marble_wall"
+    ]
+  },
+  "sends_telemetry_event": true
+}
