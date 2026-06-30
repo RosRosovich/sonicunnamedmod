@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "sonicunnamedmod:block/cracked_green_hill_dirt"
+  }
+}

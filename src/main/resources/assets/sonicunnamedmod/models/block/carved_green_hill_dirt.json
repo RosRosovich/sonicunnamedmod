@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sonicunnamedmod:block/carved_green_hill_dirt"
+  }
+}

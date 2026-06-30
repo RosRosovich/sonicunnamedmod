@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "sonicunnamedmod:block/green_hill_grass_block_top",
+    "bottom": "sonicunnamedmod:block/polished_marble",
+    "side": "sonicunnamedmod:block/grass_polished_marble"
+  }
+}
