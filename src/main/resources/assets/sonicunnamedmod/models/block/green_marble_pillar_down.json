@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sonicunnamedmod:block/green_marble_pillar_top",
+    "side": "sonicunnamedmod:block/green_marble_pillar_down"
+  }
+}

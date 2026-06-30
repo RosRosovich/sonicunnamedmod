@@ -11,6 +11,7 @@
   "block.sonicunnamedmod.totem_creeper_block": "Тотемный блок \"Крипер\"",
   "block.sonicunnamedmod.totem_golem_block": "Тотемный блок \"Голем\"",
   "block.sonicunnamedmod.totem_surprise_block": "Тотемный блок \"Удивление\"",
+  "block.sonicunnamedmod.totem_wings": "Крылья тотема",
   "block.sonicunnamedmod.cracked_green_hill_turf": "Потрескавшаяся зелено-холмовая земля",
 
   "block.sonicunnamedmod.marble_bricks": "Мраморные кирпичи",
@@ -18,10 +19,10 @@
   "block.sonicunnamedmod.marble_bricks_stairs": "Ступеньки из мраморных кирпичей",
   "block.sonicunnamedmod.marble_bricks_wall": "Ограда из мраморных кирпичей",
 
-  "block.sonicunnamedmod.marble_flagstone": "Мраморный плитняк",
-  "block.sonicunnamedmod.marble_flagstone_slab": "Плита из мраморного плитняка",
-  "block.sonicunnamedmod.marble_flagstone_stairs": "Ступеньки из мраморного плитняка",
-  "block.sonicunnamedmod.marble_flagstone_wall": "Ограда из мраморного плитняка",
+  "block.sonicunnamedmod.marble_tiles": "Мраморная плитка",
+  "block.sonicunnamedmod.marble_tiles_slab": "Плита из мраморной плитки",
+  "block.sonicunnamedmod.marble_tiles_stairs": "Ступеньки из мраморной плитки",
+  "block.sonicunnamedmod.marble_tiles_wall": "Ограда из мраморной плитки",
 
   "block.sonicunnamedmod.polished_marble": "Полированный мрамор",
   "block.sonicunnamedmod.polished_marble_slab": "Плита из полированного мрамора",
