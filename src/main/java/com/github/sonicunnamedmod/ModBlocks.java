@@ -81,6 +81,12 @@ public class ModBlocks {
     public static final Block TOTEM_SURPRISE_BLOCK = register("totem_surprise_block",
             new TotemBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(2.0f)));
 
+    public static final Block TOTEM_WINGS = register("totem_wings",
+            new TotemWingsBlock(AbstractBlock.Settings.copy(Blocks.STONE)
+                    .requiresTool()
+                    .strength(2.0f)
+                    .nonOpaque()));
+
     public static void registerFlowerItem() {
         Identifier id = Identifier.of(SonicUnnamedMod.MOD_ID, "clover_flower");
         Item flowerItem = Registry.register(Registries.ITEM, id,
@@ -153,6 +159,7 @@ public class ModBlocks {
             entries.add(TOTEM_CREEPER_BLOCK);
             entries.add(TOTEM_GOLEM_BLOCK);
             entries.add(TOTEM_SURPRISE_BLOCK);
+            entries.add(TOTEM_WINGS);
 
             entries.add(marble_bricks);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_slab")));
