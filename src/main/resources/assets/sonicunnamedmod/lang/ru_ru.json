@@ -3,16 +3,21 @@
 
   "block.sonicunnamedmod.clover_flower": "Клеверный цветок",
   "block.sonicunnamedmod.green_hill_grass": "Зелено-холмовая трава",
-  "block.sonicunnamedmod.basalt_bricks": "Базальтовые кирпичи",
   "block.sonicunnamedmod.green_hill_dirt": "Зелено-холмовая земля",
-  "block.sonicunnamedmod.green_hill_turf": "Зелено-холмовый дёрн",
-  "block.sonicunnamedmod.carved_green_hill_turf": "Резная зелено-холмовая земля",
+  "block.sonicunnamedmod.green_hill_grass_block": "Зелено-холмовый дёрн",
+  "block.sonicunnamedmod.carved_green_hill_dirt": "Резная зелено-холмовая земля",
   "block.sonicunnamedmod.totem_angry_block": "Тотемный блок \"Злой\"",
   "block.sonicunnamedmod.totem_creeper_block": "Тотемный блок \"Крипер\"",
   "block.sonicunnamedmod.totem_golem_block": "Тотемный блок \"Голем\"",
   "block.sonicunnamedmod.totem_surprise_block": "Тотемный блок \"Удивление\"",
   "block.sonicunnamedmod.totem_wings": "Крылья тотема",
-  "block.sonicunnamedmod.cracked_green_hill_turf": "Потрескавшаяся зелено-холмовая земля",
+  "block.sonicunnamedmod.cracked_green_hill_dirt": "Потрескавшаяся зелено-холмовая земля",
+
+  "block.sonicunnamedmod.lava_glass": "Лавовое стекло",
+
+  "block.sonicunnamedmod.marble_tiles_grass_block": "Трава на мраморном плитняке",
+  "block.sonicunnamedmod.marble_bricks_grass_block": "Трава на мраморных кирпичах",
+  "block.sonicunnamedmod.polished_marble_grass_block": "Трава на полированном мраморе",
 
   "block.sonicunnamedmod.marble_bricks": "Мраморные кирпичи",
   "block.sonicunnamedmod.marble_bricks_slab": "Плита из мраморных кирпичей",

@@ -23,8 +23,11 @@ public class CloverFlowerBlock extends TallPlantBlock {
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(ModBlocks.GREEN_HILL_TURF)
+        return floor.isOf(ModBlocks.GREEN_HILL_GRASS_BLOCK)
                 || floor.isOf(ModBlocks.GREEN_HILL_DIRT)
+                || floor.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK)
+                || floor.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK)
+                || floor.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK)
                 || super.canPlantOnTop(floor, world, pos);
     }
 }

@@ -31,17 +31,18 @@ public class GreenHillPlantHelper {
 
         BlockState state = world.getBlockState(pos);
 
-        // Проверяем что это наша земля или трава
-        if (!state.isOf(ModBlocks.GREEN_HILL_TURF) && !state.isOf(ModBlocks.GREEN_HILL_DIRT)) {
+        if (!state.isOf(ModBlocks.GREEN_HILL_GRASS_BLOCK) &&
+                !state.isOf(ModBlocks.GREEN_HILL_DIRT) &&
+                !state.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK) &&
+                !state.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK) &&
+                !state.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK)) {
             return;
         }
 
-        // Тратим костную муку
         if (stack.getItem() == Items.BONE_MEAL && !player.getAbilities().creativeMode) {
             stack.decrement(1);
         }
 
-        // Ищем место
         for (int i = 0; i < 20; i++) {
             int x = pos.getX() + world.random.nextInt(3) - 1;
             int z = pos.getZ() + world.random.nextInt(3) - 1;
@@ -49,7 +50,11 @@ public class GreenHillPlantHelper {
 
             if (world.isAir(plantPos)) {
                 BlockState below = world.getBlockState(plantPos.down());
-                if (below.isOf(ModBlocks.GREEN_HILL_TURF) || below.isOf(ModBlocks.GREEN_HILL_DIRT)) {
+                if (below.isOf(ModBlocks.GREEN_HILL_GRASS_BLOCK) ||
+                        below.isOf(ModBlocks.GREEN_HILL_DIRT) ||
+                        below.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK) ||
+                        below.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK) ||
+                        below.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK)) {
                     BlockState plant = PLANTS.get(world.random.nextInt(PLANTS.size()));
                     placePlant(world, plantPos, plant);
                     spawnEffects(world, pos);
@@ -57,6 +62,17 @@ public class GreenHillPlantHelper {
                 }
             }
         }
+    }
+
+    public static boolean isModBlock(World world, BlockPos pos) {
+        BlockState state = world.getBlockState(pos);
+        return state.isOf(ModBlocks.GREEN_HILL_GRASS_BLOCK) ||
+                state.isOf(ModBlocks.GREEN_HILL_DIRT) ||
+                state.isOf(ModBlocks.CLOVER_FLOWER) ||
+                state.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK) ||
+                state.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK) ||
+                state.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK) ||
+                state.isOf(ModBlocks.GREEN_HILL_GRASS);
     }
 
     public static void duplicatePlant(World world, BlockPos pos, PlayerEntity player, ItemStack stack) {
@@ -79,7 +95,11 @@ public class GreenHillPlantHelper {
 
             if (world.isAir(plantPos)) {
                 BlockState below = world.getBlockState(plantPos.down());
-                if (below.isOf(ModBlocks.GREEN_HILL_TURF) || below.isOf(ModBlocks.GREEN_HILL_DIRT)) {
+                if (below.isOf(ModBlocks.GREEN_HILL_GRASS_BLOCK) ||
+                        below.isOf(ModBlocks.GREEN_HILL_DIRT) ||
+                        below.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK) ||
+                        below.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK) ||
+                        below.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK)) {
                     placePlant(world, plantPos, state);
                     spawnEffects(world, pos);
                     return;

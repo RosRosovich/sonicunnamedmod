@@ -1,9 +1,6 @@
 package com.github.sonicunnamedmod;
 
-import com.github.sonicunnamedmod.block.CloverFlowerBlock;
-import com.github.sonicunnamedmod.block.GreenHillGrassPlantBlock;
-import com.github.sonicunnamedmod.block.GreenHillTurfBlock;
-import com.github.sonicunnamedmod.block.GreenMarblePillarBlock;
+import com.github.sonicunnamedmod.block.*;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -15,6 +12,7 @@ import net.minecraft.item.TallBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -29,7 +27,7 @@ public class ModBlocks {
             ITEM_GROUP_KEY,
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemGroup.sonicunnamedmod.blocks"))
-                    .icon(() -> new ItemStack(ModBlocks.GREEN_HILL_TURF))
+                    .icon(() -> new ItemStack(ModBlocks.GREEN_HILL_GRASS_BLOCK))
                     .build()
     );
 
@@ -59,14 +57,14 @@ public class ModBlocks {
     public static final Block GREEN_HILL_DIRT = register("green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.DIRT)));
 
-    public static final Block GREEN_HILL_TURF = register("green_hill_turf",
+    public static final Block GREEN_HILL_GRASS_BLOCK = register("green_hill_grass_block",
             new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK))
     );
 
-    public static final Block CARVED_GREEN_HILL_TURF = register("carved_green_hill_turf",
+    public static final Block CARVED_GREEN_HILL_DIRT = register("carved_green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()));
 
-    public static final Block CRACKED_GREEN_HILL_TURF = register("cracked_green_hill_turf",
+    public static final Block CRACKED_GREEN_HILL_DIRT = register("cracked_green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool().strength(1.5f, 6.0f)));
 
     public static final Block TOTEM_ANGRY_BLOCK = register("totem_angry_block",
@@ -87,6 +85,25 @@ public class ModBlocks {
                     .strength(2.0f)
                     .nonOpaque()));
 
+    public static Block MARBLE_BRICKS;
+    public static Block MARBLE_TILES;
+    public static Block POLISHED_MARBLE;
+    public static Block GREEN_MARBLE_BRICK;
+    public static Block GREEN_POLISHED_MARBLE;
+    public static Block GREEN_MARBLE_TILES;
+
+    public static final Block LAVA_GLASS = register("lava_glass",
+            new LavaGlassBlock(AbstractBlock.Settings.create()
+                    .nonOpaque()
+                    .luminance(state -> 15)
+                    .strength(0.3f)
+                    .sounds(BlockSoundGroup.GLASS)
+            ));
+
+    public static Block MARBLE_TILES_GRASS_BLOCK;
+    public static Block MARBLE_BRICKS_GRASS_BLOCK;
+    public static Block POLISHED_MARBLE_GRASS_BLOCK;
+
     public static void registerFlowerItem() {
         Identifier id = Identifier.of(SonicUnnamedMod.MOD_ID, "clover_flower");
         Item flowerItem = Registry.register(Registries.ITEM, id,
@@ -96,43 +113,53 @@ public class ModBlocks {
     public static void registerAll() {
         registerFlowerItem();
 
-        //Marble Blocks
-
-        Block marble_bricks = register("marble_bricks",
+        MARBLE_BRICKS = register("marble_bricks",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("marble_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
-        register("marble_bricks_stairs", new StairsBlock(marble_bricks.getDefaultState(), AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
-        register("marble_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
+        register("marble_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(MARBLE_BRICKS).requiresTool()));
+        register("marble_bricks_stairs", new StairsBlock(MARBLE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MARBLE_BRICKS).requiresTool()));
+        register("marble_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(MARBLE_BRICKS).requiresTool()));
 
-        Block marble_tiles = register("marble_tiles",
+        MARBLE_TILES = register("marble_tiles",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("marble_tiles_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_tiles).requiresTool()));
-        register("marble_tiles_stairs", new StairsBlock(marble_tiles.getDefaultState(), AbstractBlock.Settings.copy(marble_tiles).requiresTool()));
-        register("marble_tiles_wall", new WallBlock(AbstractBlock.Settings.copy(marble_tiles).requiresTool()));
+        register("marble_tiles_slab", new SlabBlock(AbstractBlock.Settings.copy(MARBLE_TILES).requiresTool()));
+        register("marble_tiles_stairs", new StairsBlock(MARBLE_TILES.getDefaultState(), AbstractBlock.Settings.copy(MARBLE_TILES).requiresTool()));
+        register("marble_tiles_wall", new WallBlock(AbstractBlock.Settings.copy(MARBLE_TILES).requiresTool()));
 
-        Block polished_marble = register("polished_marble",
+        POLISHED_MARBLE = register("polished_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
-        register("polished_marble_stairs", new StairsBlock(polished_marble.getDefaultState(), AbstractBlock.Settings.copy(polished_marble).requiresTool()));
-        register("polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(polished_marble).requiresTool()));
+        register("polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(POLISHED_MARBLE).requiresTool()));
+        register("polished_marble_stairs", new StairsBlock(POLISHED_MARBLE.getDefaultState(), AbstractBlock.Settings.copy(POLISHED_MARBLE).requiresTool()));
+        register("polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(POLISHED_MARBLE).requiresTool()));
 
-        Block green_marble_brick = register("green_marble_brick",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("green_marble_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(green_marble_brick).requiresTool()));
-        register("green_marble_brick_stairs", new StairsBlock(green_marble_brick.getDefaultState(), AbstractBlock.Settings.copy(green_marble_brick).requiresTool()));
-        register("green_marble_brick_wall", new WallBlock(AbstractBlock.Settings.copy(green_marble_brick).requiresTool()));
+        MARBLE_TILES_GRASS_BLOCK = register("marble_tiles_grass_block",
+                new MarbleTilesGrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(1.5f, 6.0f))
+        );
 
-        Block green_polished_marble = register("green_polished_marble",
-                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("green_polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(green_polished_marble).requiresTool()));
-        register("green_polished_marble_stairs", new StairsBlock(green_polished_marble.getDefaultState(), AbstractBlock.Settings.copy(green_polished_marble).requiresTool()));
-        register("green_polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(green_polished_marble).requiresTool()));
+        MARBLE_BRICKS_GRASS_BLOCK = register("marble_bricks_grass_block",
+                new MarbleBricksGrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(1.5f, 6.0f))
+        );
 
-        Block green_marble_tiles = register("green_marble_tiles",
+        POLISHED_MARBLE_GRASS_BLOCK = register("polished_marble_grass_block",
+                new PolishedMarbleGrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(1.5f, 6.0f))
+        );
+
+        GREEN_MARBLE_BRICK = register("green_marble_brick",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("green_marble_tiles_slab", new SlabBlock(AbstractBlock.Settings.copy(green_marble_tiles).requiresTool()));
-        register("green_marble_tiles_stairs", new StairsBlock(green_marble_tiles.getDefaultState(), AbstractBlock.Settings.copy(green_marble_tiles).requiresTool()));
-        register("green_marble_tiles_wall", new WallBlock(AbstractBlock.Settings.copy(green_marble_tiles).requiresTool()));
+        register("green_marble_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
+        register("green_marble_brick_stairs", new StairsBlock(GREEN_MARBLE_BRICK.getDefaultState(), AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
+        register("green_marble_brick_wall", new WallBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
+
+        GREEN_POLISHED_MARBLE = register("green_polished_marble",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("green_polished_marble_slab", new SlabBlock(AbstractBlock.Settings.copy(GREEN_POLISHED_MARBLE).requiresTool()));
+        register("green_polished_marble_stairs", new StairsBlock(GREEN_POLISHED_MARBLE.getDefaultState(), AbstractBlock.Settings.copy(GREEN_POLISHED_MARBLE).requiresTool()));
+        register("green_polished_marble_wall", new WallBlock(AbstractBlock.Settings.copy(GREEN_POLISHED_MARBLE).requiresTool()));
+
+        GREEN_MARBLE_TILES = register("green_marble_tiles",
+                new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+        register("green_marble_tiles_slab", new SlabBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_TILES).requiresTool()));
+        register("green_marble_tiles_stairs", new StairsBlock(GREEN_MARBLE_TILES.getDefaultState(), AbstractBlock.Settings.copy(GREEN_MARBLE_TILES).requiresTool()));
+        register("green_marble_tiles_wall", new WallBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_TILES).requiresTool()));
 
         register("green_chiseled_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
@@ -149,11 +176,10 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP_KEY).register(entries -> {
             entries.add(CLOVER_FLOWER);
             entries.add(GREEN_HILL_GRASS);
-
             entries.add(GREEN_HILL_DIRT);
-            entries.add(GREEN_HILL_TURF);
-            entries.add(CRACKED_GREEN_HILL_TURF);
-            entries.add(CARVED_GREEN_HILL_TURF);
+            entries.add(GREEN_HILL_GRASS_BLOCK);
+            entries.add(CRACKED_GREEN_HILL_DIRT);
+            entries.add(CARVED_GREEN_HILL_DIRT);
 
             entries.add(TOTEM_ANGRY_BLOCK);
             entries.add(TOTEM_CREEPER_BLOCK);
@@ -161,32 +187,37 @@ public class ModBlocks {
             entries.add(TOTEM_SURPRISE_BLOCK);
             entries.add(TOTEM_WINGS);
 
-            entries.add(marble_bricks);
+            entries.add(LAVA_GLASS);
+            entries.add(MARBLE_TILES_GRASS_BLOCK);
+            entries.add(MARBLE_BRICKS_GRASS_BLOCK);
+            entries.add(POLISHED_MARBLE_GRASS_BLOCK);
+
+            entries.add(MARBLE_BRICKS);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_slab")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_wall")));
 
-            entries.add(marble_tiles);
+            entries.add(MARBLE_TILES);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_tiles_slab")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_tiles_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_tiles_wall")));
 
-            entries.add(polished_marble);
+            entries.add(POLISHED_MARBLE);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_slab")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_wall")));
 
-            entries.add(green_marble_brick);
+            entries.add(GREEN_MARBLE_BRICK);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_slab")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_wall")));
 
-            entries.add(green_polished_marble);
+            entries.add(GREEN_POLISHED_MARBLE);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_slab")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_wall")));
 
-            entries.add(green_marble_tiles);
+            entries.add(GREEN_MARBLE_TILES);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_tiles_slab")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_tiles_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_tiles_wall")));

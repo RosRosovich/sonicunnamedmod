@@ -24,7 +24,7 @@ public class GreenHillTurfBlock extends GrassBlock {
                     BlockState targetState = world.getBlockState(targetPos);
 
                     if (targetState.isOf(ModBlocks.GREEN_HILL_DIRT) && world.getLightLevel(targetPos.up()) >= 9) {
-                        world.setBlockState(targetPos, ModBlocks.GREEN_HILL_TURF.getDefaultState());
+                        world.setBlockState(targetPos, ModBlocks.GREEN_HILL_GRASS_BLOCK.getDefaultState());
                     }
                 }
             }
