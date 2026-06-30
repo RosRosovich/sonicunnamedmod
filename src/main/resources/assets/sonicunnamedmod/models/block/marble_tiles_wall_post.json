@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_post",
   "textures": {
-    "wall": "sonicunnamedmod:block/marble_flagstone"
+    "wall": "sonicunnamedmod:block/marble_tiles"
   }
 }

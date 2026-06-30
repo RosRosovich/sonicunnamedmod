@@ -104,11 +104,11 @@ public class ModBlocks {
         register("marble_bricks_stairs", new StairsBlock(marble_bricks.getDefaultState(), AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
         register("marble_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(marble_bricks).requiresTool()));
 
-        Block marble_flagstone = register("marble_flagstone",
+        Block marble_tiles = register("marble_tiles",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("marble_flagstone_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
-        register("marble_flagstone_stairs", new StairsBlock(marble_flagstone.getDefaultState(), AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
-        register("marble_flagstone_wall", new WallBlock(AbstractBlock.Settings.copy(marble_flagstone).requiresTool()));
+        register("marble_tiles_slab", new SlabBlock(AbstractBlock.Settings.copy(marble_tiles).requiresTool()));
+        register("marble_tiles_stairs", new StairsBlock(marble_tiles.getDefaultState(), AbstractBlock.Settings.copy(marble_tiles).requiresTool()));
+        register("marble_tiles_wall", new WallBlock(AbstractBlock.Settings.copy(marble_tiles).requiresTool()));
 
         Block polished_marble = register("polished_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
@@ -166,10 +166,10 @@ public class ModBlocks {
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_bricks_wall")));
 
-            entries.add(marble_flagstone);
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_flagstone_slab")));
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_flagstone_stairs")));
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_flagstone_wall")));
+            entries.add(marble_tiles);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_tiles_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_tiles_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "marble_tiles_wall")));
 
             entries.add(polished_marble);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_slab")));

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "sonicunnamedmod:block/marble_flagstone",
-    "top": "sonicunnamedmod:block/marble_flagstone",
-    "side": "sonicunnamedmod:block/marble_flagstone"
-  }
-}

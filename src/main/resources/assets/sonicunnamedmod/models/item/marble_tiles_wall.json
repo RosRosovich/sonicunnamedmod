@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "sonicunnamedmod:block/marble_flagstone"
+    "wall": "sonicunnamedmod:block/marble_tiles"
   }
 }

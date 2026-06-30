@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_marble_flagstone": {
+    "has_marble_tiles": {
       "conditions": {
         "items": [
           {
             "items": [
-              "sonicunnamedmod:marble_flagstone"
+              "sonicunnamedmod:marble_tiles"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sonicunnamedmod:marble_flagstone_wall"
+        "recipe": "sonicunnamedmod:marble_tiles_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_marble_flagstone",
+      "has_marble_tiles",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "sonicunnamedmod:marble_flagstone_wall"
+      "sonicunnamedmod:marble_tiles_stairs"
     ]
   },
   "sends_telemetry_event": true

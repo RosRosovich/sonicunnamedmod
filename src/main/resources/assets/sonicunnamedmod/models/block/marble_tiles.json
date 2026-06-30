@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "sonicunnamedmod:block/marble_flagstone"
+    "all": "sonicunnamedmod:block/marble_tiles"
   }
 }

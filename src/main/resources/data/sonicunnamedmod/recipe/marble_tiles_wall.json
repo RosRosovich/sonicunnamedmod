@@ -3,14 +3,15 @@
   "category": "building",
   "key": {
     "A": {
-      "item": "sonicunnamedmod:marble_flagstone"
+      "item": "sonicunnamedmod:marble_tiles"
     }
   },
   "pattern": [
+    "AAA",
     "AAA"
   ],
   "result": {
     "count": 6,
-    "id": "sonicunnamedmod:marble_flagstone_slab"
+    "id": "sonicunnamedmod:marble_tiles_wall"
   }
 }
