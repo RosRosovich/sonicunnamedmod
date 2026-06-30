@@ -1,16 +1,18 @@
 {
   "variants": {
-    "axis=x": {
-      "model": "sonicunnamedmod:block/green_marble_pillar_horizontal",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
-      "model": "sonicunnamedmod:block/green_marble_pillar"
-    },
-    "axis=z": {
-      "model": "sonicunnamedmod:block/green_marble_pillar_horizontal",
-      "x": 90
-    }
+    "axis=x,connected_negative=false,connected_positive=false": { "model": "sonicunnamedmod:block/green_marble_pillar_horizontal", "x": 90, "y": 90 },
+    "axis=x,connected_negative=false,connected_positive=true":  { "model": "sonicunnamedmod:block/green_marble_pillar_down_horizontal", "x": 90, "y": 90 },
+    "axis=x,connected_negative=true,connected_positive=false":  { "model": "sonicunnamedmod:block/green_marble_pillar_up_horizontal", "x": 90, "y": 90 },
+    "axis=x,connected_negative=true,connected_positive=true":   { "model": "sonicunnamedmod:block/green_marble_pillar_mid_horizontal", "x": 90, "y": 90 },
+
+    "axis=y,connected_negative=false,connected_positive=false": { "model": "sonicunnamedmod:block/green_marble_pillar" },
+    "axis=y,connected_negative=false,connected_positive=true":  { "model": "sonicunnamedmod:block/green_marble_pillar_down" },
+    "axis=y,connected_negative=true,connected_positive=false":  { "model": "sonicunnamedmod:block/green_marble_pillar_up" },
+    "axis=y,connected_negative=true,connected_positive=true":   { "model": "sonicunnamedmod:block/green_marble_pillar_mid" },
+
+    "axis=z,connected_negative=false,connected_positive=false": { "model": "sonicunnamedmod:block/green_marble_pillar_horizontal", "x": 90 },
+    "axis=z,connected_negative=false,connected_positive=true":  { "model": "sonicunnamedmod:block/green_marble_pillar_down_horizontal", "x": 90 },
+    "axis=z,connected_negative=true,connected_positive=false":  { "model": "sonicunnamedmod:block/green_marble_pillar_up_horizontal", "x": 90 },
+    "axis=z,connected_negative=true,connected_positive=true":   { "model": "sonicunnamedmod:block/green_marble_pillar_mid_horizontal", "x": 90 }
   }
 }

@@ -3,6 +3,7 @@ package com.github.sonicunnamedmod;
 import com.github.sonicunnamedmod.block.CloverFlowerBlock;
 import com.github.sonicunnamedmod.block.GreenHillGrassPlantBlock;
 import com.github.sonicunnamedmod.block.GreenHillTurfBlock;
+import com.github.sonicunnamedmod.block.GreenMarblePillarBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -134,7 +135,7 @@ public class ModBlocks {
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
         register("green_marble_pillar",
-                new PillarBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+                new GreenMarblePillarBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
         register("green_push_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
