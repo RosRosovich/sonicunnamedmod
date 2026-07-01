@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": { "texture": "sonicunnamedmod:block/palm_planks" }
+}

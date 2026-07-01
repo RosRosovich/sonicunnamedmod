@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "name": "sonicunnamedmod:palm_block_slab",
+      "functions": [{
+        "function": "minecraft:set_count",
+        "count": 2,
+        "conditions": [{
+          "condition": "minecraft:block_state_property",
+          "block": "sonicunnamedmod:palm_block_slab",
+          "properties": { "type": "double" }
+        }]
+      }]
+    }],
+    "conditions": [{ "condition": "minecraft:survives_explosion" }]
+  }]
+}

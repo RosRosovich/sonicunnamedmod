@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "sonicunnamedmod:block/palm_pressure_plate" },
+    "powered=true": { "model": "sonicunnamedmod:block/palm_pressure_plate_down" }
+  }
+}

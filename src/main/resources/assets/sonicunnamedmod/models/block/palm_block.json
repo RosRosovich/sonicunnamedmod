@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sonicunnamedmod:block/palm_block_top",
+    "side": "sonicunnamedmod:block/palm_block"
+  }
+}

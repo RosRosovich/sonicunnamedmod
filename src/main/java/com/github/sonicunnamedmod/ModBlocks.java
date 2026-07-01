@@ -61,6 +61,42 @@ public class ModBlocks {
             new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK))
     );
 
+    public static final Block PALM_LOG = register("palm_log",
+            new PalmBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+
+    public static final Block PALM_TOP = register("palm_top",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+
+    public static final Block PALM_BLOCK = register("palm_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+
+    public static final Block PALM_BLOCK_SLAB = register("palm_block_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+
+    public static final Block PALM_BLOCK_STAIRS = register("palm_block_stairs",
+            new StairsBlock(PALM_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+
+    public static final Block PALM_PLANKS = register("palm_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block PALM_SLAB = register("palm_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+
+    public static final Block PALM_STAIRS = register("palm_stairs",
+            new StairsBlock(PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+
+    public static final Block PALM_FENCE = register("palm_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+
+    public static final Block PALM_FENCE_GATE = register("palm_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+
+    public static final Block PALM_BUTTON = register("palm_button",
+            new PalmButtonBlock(AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+
+    public static final Block PALM_PRESSURE_PLATE = register("palm_pressure_plate",
+            new PalmPressurePlateBlock(AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+
     public static final Block CARVED_GREEN_HILL_DIRT = register("carved_green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()));
 
@@ -178,6 +214,18 @@ public class ModBlocks {
             entries.add(GREEN_HILL_GRASS);
             entries.add(GREEN_HILL_DIRT);
             entries.add(GREEN_HILL_GRASS_BLOCK);
+            entries.add(PALM_LOG);
+            entries.add(PALM_TOP);
+            entries.add(PALM_BLOCK);
+            entries.add(PALM_BLOCK_SLAB);
+            entries.add(PALM_BLOCK_STAIRS);
+            entries.add(PALM_PLANKS);
+            entries.add(PALM_SLAB);
+            entries.add(PALM_STAIRS);
+            entries.add(PALM_FENCE);
+            entries.add(PALM_FENCE_GATE);
+            entries.add(PALM_BUTTON);
+            entries.add(PALM_PRESSURE_PLATE);
             entries.add(CRACKED_GREEN_HILL_DIRT);
             entries.add(CARVED_GREEN_HILL_DIRT);
 
