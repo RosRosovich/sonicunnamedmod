@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": { "P": { "item": "sonicunnamedmod:palm_planks" } },
+  "pattern": ["P  ", "PP ", "PPP"],
+  "result": { "count": 4, "id": "sonicunnamedmod:palm_stairs" }
+}

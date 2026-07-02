@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "sonicunnamedmod:block/palm_block" },
+    "axis=z": { "model": "sonicunnamedmod:block/palm_block_horizontal", "x": 90 },
+    "axis=x": { "model": "sonicunnamedmod:block/palm_block_horizontal", "x": 90, "y": 90 }
+  }
+}

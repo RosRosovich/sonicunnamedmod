@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "sonicunnamedmod:block/palm_slab" },
+    "type=top": { "model": "sonicunnamedmod:block/palm_slab_top" },
+    "type=double": { "model": "sonicunnamedmod:block/palm_planks" }
+  }
+}

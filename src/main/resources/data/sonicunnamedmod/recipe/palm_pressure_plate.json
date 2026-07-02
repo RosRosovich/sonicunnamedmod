@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": { "P": { "item": "sonicunnamedmod:palm_planks" } },
+  "pattern": ["PP"],
+  "result": { "count": 1, "id": "sonicunnamedmod:palm_pressure_plate" }
+}

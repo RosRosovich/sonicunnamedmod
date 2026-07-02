@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "sonicunnamedmod:block/palm_planks",
+    "side": "sonicunnamedmod:block/palm_planks",
+    "top": "sonicunnamedmod:block/palm_planks"
+  }
+}
