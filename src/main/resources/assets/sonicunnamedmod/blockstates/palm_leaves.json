@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "top=true,facing=north": {
+      "model": "sonicunnamedmod:block/palm_leaves_top",
+      "y": 0
+    },
+    "top=true,facing=east": {
+      "model": "sonicunnamedmod:block/palm_leaves_top",
+      "y": 90
+    },
+    "top=true,facing=south": {
+      "model": "sonicunnamedmod:block/palm_leaves_top",
+      "y": 180
+    },
+    "top=true,facing=west": {
+      "model": "sonicunnamedmod:block/palm_leaves_top",
+      "y": 270
+    },
+    "top=false,facing=north": {
+      "model": "sonicunnamedmod:block/palm_leaves_side",
+      "y": 0
+    },
+    "top=false,facing=east": {
+      "model": "sonicunnamedmod:block/palm_leaves_side",
+      "y": 90
+    },
+    "top=false,facing=south": {
+      "model": "sonicunnamedmod:block/palm_leaves_side",
+      "y": 180
+    },
+    "top=false,facing=west": {
+      "model": "sonicunnamedmod:block/palm_leaves_side",
+      "y": 270
+    }
+  }
+}

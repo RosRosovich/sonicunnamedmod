@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "block/cube_all",
   "textures": {
     "all": "sonicunnamedmod:block/lava_glass"
-  }
+  },
+  "render_type": "translucent"
 }

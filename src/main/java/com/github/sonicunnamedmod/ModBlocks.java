@@ -136,6 +136,15 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.GLASS)
             ));
 
+    public static final Block PALM_LEAVES = register("palm_leaves",
+            new PalmLeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
+                    .nonOpaque()
+                    .strength(0.2f)
+                    .sounds(BlockSoundGroup.GRASS)
+                    .ticksRandomly()
+            )
+    );
+
     public static Block MARBLE_TILES_GRASS_BLOCK;
     public static Block MARBLE_BRICKS_GRASS_BLOCK;
     public static Block POLISHED_MARBLE_GRASS_BLOCK;
@@ -215,6 +224,7 @@ public class ModBlocks {
             entries.add(GREEN_HILL_DIRT);
             entries.add(GREEN_HILL_GRASS_BLOCK);
             entries.add(PALM_LOG);
+            entries.add(PALM_LEAVES);
             entries.add(PALM_TOP);
             entries.add(PALM_BLOCK);
             entries.add(PALM_BLOCK_SLAB);
