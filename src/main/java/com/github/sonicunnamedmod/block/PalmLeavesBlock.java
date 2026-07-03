@@ -69,8 +69,6 @@ public class PalmLeavesBlock extends Block {
     protected BlockState getStateForNeighborUpdate(BlockState state, Direction direction,
                                                    BlockState neighborState, WorldAccess world,
                                                    BlockPos pos, BlockPos neighborPos) {
-        if (!canPlaceAt(state, world, pos)) {
-        }
         return state;
     }
 
