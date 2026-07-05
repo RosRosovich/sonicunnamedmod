@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49a82ae4-d72b-47a0-a320-cd7b61eea798" name="Changes" comment="Recipe for palm blocks have been reworked.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/stairs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="721" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sonicunnamedmod" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sonicunnamedmod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sonicunnamedmod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sonicunnamedmod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="fabric" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SergoFoox&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RosRosovich/sonicunnamedmod.git&quot;,
+    &quot;accountId&quot;: &quot;d5044eef-d111-4ff9-b8ab-a17cd89e1066&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;RosRosovich&quot;,
+    &quot;repository&quot;: &quot;sonicunnamedmod&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000053190651799" />
+      <entry key="MS500" value="1.2039649694820453" />
+      <entry key="S2" value="2.115385569459705" />
+      <entry key="S5" value="2.5816694757091807" />
+      <entry key="S10" value="2.7784519319374583" />
+      <entry key="S30" value="3.0371310624084056" />
+      <entry key="S60" value="3.7172853986065424" />
+      <entry key="M2" value="5.518150096506872" />
+      <entry key="M5" value="10.707716472814377" />
+      <entry key="M10" value="19.34955430985951" />
+      <entry key="M15" value="33.2224616673043" />
+      <entry key="M30" value="133.00589216951906" />
+      <entry key="H1" value="434.4734450846669" />
+      <entry key="H2" value="900.8855236253471" />
+      <entry key="H4" value="1354.2456437462681" />
+      <entry key="D1" value="1954.8538580857705" />
+      <entry key="W1" value="2087.795050963287" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="1.247708889269181E-169" />
+      <entry key="S60" value="3.532292300007448E-85" />
+      <entry key="M2" value="5.943309095114623E-43" />
+      <entry key="M5" value="1.2870971595709418E-17" />
+      <entry key="M10" value="3.5882935507987613E-9" />
+      <entry key="M15" value="2.355455251867038E-6" />
+      <entry key="M30" value="0.0017461456484408606" />
+      <entry key="H1" value="0.06836763079789751" />
+      <entry key="H2" value="0.5395068444151683" />
+      <entry key="H4" value="1.61360527558349" />
+      <entry key="D1" value="4.132025571145813" />
+      <entry key="W1" value="4.865404775471673" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9593147831942473" />
+      <entry key="MS500" value="1.1936229668303695" />
+      <entry key="S2" value="2.1104311639985722" />
+      <entry key="S5" value="2.5791985819041" />
+      <entry key="S10" value="2.777112984987589" />
+      <entry key="S30" value="3.0366363835769263" />
+      <entry key="S60" value="3.716969163979058" />
+      <entry key="M2" value="5.517899928899759" />
+      <entry key="M5" value="10.707510770196981" />
+      <entry key="M10" value="19.349354697328163" />
+      <entry key="M15" value="33.22219813953603" />
+      <entry key="M30" value="133.00701644986964" />
+      <entry key="H1" value="434.54081067463034" />
+      <entry key="H2" value="901.4239520181993" />
+      <entry key="H4" value="1355.8583773836535" />
+      <entry key="D1" value="1958.9856494969686" />
+      <entry key="W1" value="2092.6604191259944" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FmJhFcjsG3rcZ73rIxoUVF8veR" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build sonicunnamedmod.executor": "Run",
+    "Gradle.sonicunnamedmod [build].executor": "Run",
+    "Gradle.sonicunnamedmod [clean].executor": "Run",
+    "Gradle.sonicunnamedmod [runClient].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "block-refinement",
+    "git.auto.fetch.suggestion.counter": "2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/serge/Desktop/sonicunnamedmod/src/main/resources/data/minecraft/tags/block",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\data\minecraft\tags\block" />
+      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\textures\block" />
+      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\models\block" />
+      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\models\item" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\data\minecraft\tags\block" />
+      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\textures\block" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.sonicunnamedmod [runClient]">
+    <configuration name="sonicunnamedmod [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sonicunnamedmod [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sonicunnamedmod [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.sonicunnamedmod [runClient]" />
+        <item itemvalue="Gradle.sonicunnamedmod [build]" />
+        <item itemvalue="Gradle.sonicunnamedmod [runClient]" />
+        <item itemvalue="Gradle.sonicunnamedmod [clean]" />
+        <item itemvalue="Gradle.sonicunnamedmod [runClient]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49a82ae4-d72b-47a0-a320-cd7b61eea798" name="Changes" comment="" />
+      <created>1782674429178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782674429178</updated>
+      <workItem from="1782674430677" duration="2342000" />
+      <workItem from="1782677984374" duration="5128000" />
+      <workItem from="1782727781669" duration="6681000" />
+      <workItem from="1782735010879" duration="3147000" />
+      <workItem from="1782743964423" duration="816000" />
+      <workItem from="1782750012067" duration="1535000" />
+      <workItem from="1782758601247" duration="4825000" />
+      <workItem from="1782816357670" duration="1000" />
+      <workItem from="1782816397184" duration="4317000" />
+      <workItem from="1782827289118" duration="18000" />
+      <workItem from="1782835339103" duration="6758000" />
+      <workItem from="1782846043269" duration="1110000" />
+      <workItem from="1782853398514" duration="91000" />
+      <workItem from="1782853494641" duration="278000" />
+      <workItem from="1782853824411" duration="403000" />
+      <workItem from="1782905096701" duration="4000" />
+      <workItem from="1782916749323" duration="3160000" />
+      <workItem from="1782925663842" duration="44000" />
+      <workItem from="1783276429154" duration="401000" />
+      <workItem from="1783276924778" duration="4478000" />
+    </task>
+    <task id="LOCAL-00001" summary="Unnecessary blocks have been removed">
+      <option name="closed" value="true" />
+      <created>1782676778743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782676778743</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed gitignore">
+      <option name="closed" value="true" />
+      <created>1782679970686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782679970686</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Mod ID and mod directory name have been changed.">
+      <option name="closed" value="true" />
+      <created>1782682872191</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782682872191</updated>
+    </task>
+    <task id="LOCAL-00004" summary="New marble blocks have been added.">
+      <option name="closed" value="true" />
+      <created>1782738160777</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782738160777</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed the sorting of marble blocks in the creative inventory.">
+      <option name="closed" value="true" />
+      <created>1782744615552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782744615552</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Block package added">
+      <option name="closed" value="true" />
+      <created>1782750628800</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1782750628800</updated>
+    </task>
+    <task id="LOCAL-00007" summary="recipe directory fix">
+      <option name="closed" value="true" />
+      <created>1782751294874</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1782751294874</updated>
+    </task>
+    <task id="LOCAL-00008" summary="New marble blocks have been added.">
+      <option name="closed" value="true" />
+      <created>1782763462740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1782763462741</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added tags to wall">
+      <option name="closed" value="true" />
+      <created>1782819955386</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1782819955387</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added connections to columns">
+      <option name="closed" value="true" />
+      <created>1782820105021</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1782820105021</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix for the marble column">
+      <option name="closed" value="true" />
+      <created>1782837701516</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1782837701516</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated grass texture">
+      <option name="closed" value="true" />
+      <created>1782837728596</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1782837728596</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added a new block: totem wings">
+      <option name="closed" value="true" />
+      <created>1782841350681</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1782841350681</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Renamed Flagstone to Tiles">
+      <option name="closed" value="true" />
+      <created>1782841876726</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1782841876726</updated>
+    </task>
+    <task id="LOCAL-00015" summary="New palm blocks have been added.">
+      <option name="closed" value="true" />
+      <created>1782919816600</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1782919816600</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Mod numbering change">
+      <option name="closed" value="true" />
+      <created>1782919872216</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1782919872216</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Loot tables for palm blocks have been reworked.">
+      <option name="closed" value="true" />
+      <created>1783279364527</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1783279364527</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Recipe for palm blocks have been reworked.">
+      <option name="closed" value="true" />
+      <created>1783280274679</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1783280274679</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Unnecessary blocks have been removed" />
+    <MESSAGE value="Changed gitignore" />
+    <MESSAGE value="Mod ID and mod directory name have been changed." />
+    <MESSAGE value="Changed the sorting of marble blocks in the creative inventory." />
+    <MESSAGE value="Block package added" />
+    <MESSAGE value="recipe directory fix" />
+    <MESSAGE value="New marble blocks have been added." />
+    <MESSAGE value="Added tags to wall" />
+    <MESSAGE value="Added connections to columns" />
+    <MESSAGE value="Fix for the marble column" />
+    <MESSAGE value="Updated grass texture" />
+    <MESSAGE value="Added a new block: totem wings" />
+    <MESSAGE value="Renamed Flagstone to Tiles" />
+    <MESSAGE value="New palm blocks have been added." />
+    <MESSAGE value="Mod numbering change" />
+    <MESSAGE value="Loot tables for palm blocks have been reworked." />
+    <MESSAGE value="Recipe for palm blocks have been reworked." />
+    <option name="LAST_COMMIT_MESSAGE" value="Recipe for palm blocks have been reworked." />
+  </component>
+</project>
