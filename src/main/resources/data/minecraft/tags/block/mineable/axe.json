@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "sonicunnamedmod:palm_log",
     "sonicunnamedmod:palm_block",
     "sonicunnamedmod:palm_block_slab",
     "sonicunnamedmod:palm_block_stairs",

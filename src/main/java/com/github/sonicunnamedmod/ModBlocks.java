@@ -124,7 +124,7 @@ public class ModBlocks {
     public static Block MARBLE_BRICKS;
     public static Block MARBLE_TILES;
     public static Block POLISHED_MARBLE;
-    public static Block GREEN_MARBLE_BRICK;
+    public static Block GREEN_MARBLE_BRICKS;
     public static Block GREEN_POLISHED_MARBLE;
     public static Block GREEN_MARBLE_TILES;
 
@@ -188,11 +188,11 @@ public class ModBlocks {
                 new PolishedMarbleGrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(1.5f, 6.0f))
         );
 
-        GREEN_MARBLE_BRICK = register("green_marble_brick",
+        GREEN_MARBLE_BRICKS = register("green_marble_bricks",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("green_marble_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
-        register("green_marble_brick_stairs", new StairsBlock(GREEN_MARBLE_BRICK.getDefaultState(), AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
-        register("green_marble_brick_wall", new WallBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
+        register("green_marble_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICKS).requiresTool()));
+        register("green_marble_bricks_stairs", new StairsBlock(GREEN_MARBLE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(GREEN_MARBLE_BRICKS).requiresTool()));
+        register("green_marble_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICKS).requiresTool()));
 
         GREEN_POLISHED_MARBLE = register("green_polished_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
@@ -265,10 +265,10 @@ public class ModBlocks {
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_wall")));
 
-            entries.add(GREEN_MARBLE_BRICK);
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_slab")));
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_stairs")));
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_wall")));
+            entries.add(GREEN_MARBLE_BRICKS);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_bricks_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_bricks_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_bricks_wall")));
 
             entries.add(GREEN_POLISHED_MARBLE);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_slab")));

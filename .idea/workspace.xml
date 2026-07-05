@@ -4,14 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a82ae4-d72b-47a0-a320-cd7b61eea798" name="Changes" comment="Recipe for palm blocks have been reworked.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/slabs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/stairs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/github.sonicunnamedmod.sonicunnamedmod.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sonicunnamedmod.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" afterDir="false" />
+    <list default="true" id="49a82ae4-d72b-47a0-a320-cd7b61eea798" name="Changes" comment="Added tags for blocks">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/logs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_chiseled_marble.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_chiseled_marble_bricks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_bricks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_bricks_slab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_bricks_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_bricks_wall.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_pillar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_tiles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_tiles_slab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_marble_tiles_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_polished_marble.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_polished_marble_slab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_polished_marble_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_polished_marble_wall.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/green_push_marble.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_bricks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_bricks_slab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_bricks_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_bricks_wall.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_tiles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_tiles_slab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_tiles_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/marble_tiles_wall.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/palm_log.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/polished_marble.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/polished_marble_slab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/polished_marble_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/polished_marble_wall.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/blockstates/green_marble_brick.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/blockstates/green_marble_brick_slab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/blockstates/green_marble_brick_stairs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/blockstates/green_marble_brick_wall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/ru_ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/ru_ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_slab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_slab_top.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_stairs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_stairs_inner.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_stairs_outer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_wall_post.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_wall_side.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/green_marble_brick_wall_side_tall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/item/green_marble_brick.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/item/green_marble_brick_slab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/item/green_marble_brick_stairs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/item/green_marble_brick_wall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/textures/block/green_marble_brick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/axe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/slabs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/slabs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/stairs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/stairs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/walls.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/walls.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/advancement/recipes/building/marble/green/green_marble_brick_slab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/advancement/recipes/building/marble/green/green_marble_brick_stairs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/advancement/recipes/building/marble/green/green_marble_brick_wall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/recipe/green_marble_brick_slab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/recipe/green_marble_brick_stairs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/recipe/green_marble_brick_wall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_building_blocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_building_blocks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_slabs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_slabs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_stairs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_stairs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_walls.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/tags/items/marble_walls.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +79,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="721" />
+    <option name="cachedIndexableFilesCount" value="479" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -101,23 +161,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000053190651799" />
-      <entry key="MS500" value="1.2039649694820453" />
-      <entry key="S2" value="2.115385569459705" />
-      <entry key="S5" value="2.5816694757091807" />
-      <entry key="S10" value="2.7784519319374583" />
-      <entry key="S30" value="3.0371310624084056" />
-      <entry key="S60" value="3.7172853986065424" />
-      <entry key="M2" value="5.518150096506872" />
-      <entry key="M5" value="10.707716472814377" />
-      <entry key="M10" value="19.34955430985951" />
-      <entry key="M15" value="33.2224616673043" />
-      <entry key="M30" value="133.00589216951906" />
-      <entry key="H1" value="434.4734450846669" />
-      <entry key="H2" value="900.8855236253471" />
-      <entry key="H4" value="1354.2456437462681" />
-      <entry key="D1" value="1954.8538580857705" />
-      <entry key="W1" value="2087.795050963287" />
+      <entry key="MS100" value="1.0000000000000002" />
+      <entry key="MS500" value="1.00074215080879" />
+      <entry key="S2" value="1.1651115869407576" />
+      <entry key="S5" value="1.506851538692835" />
+      <entry key="S10" value="1.8492679002112467" />
+      <entry key="S30" value="2.619527495830587" />
+      <entry key="S60" value="3.123129315398307" />
+      <entry key="M2" value="3.5252525604441836" />
+      <entry key="M5" value="6.027146911051671" />
+      <entry key="M10" value="15.294687449939124" />
+      <entry key="M15" value="27.488829479327762" />
+      <entry key="M30" value="102.36827451880498" />
+      <entry key="H1" value="364.0411487902079" />
+      <entry key="H2" value="823.3405002314158" />
+      <entry key="H4" value="1302.60307762891" />
+      <entry key="D1" value="1967.8286468154608" />
+      <entry key="W1" value="2118.5754126481193" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -125,37 +185,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.247708889269181E-169" />
-      <entry key="S60" value="3.532292300007448E-85" />
-      <entry key="M2" value="5.943309095114623E-43" />
-      <entry key="M5" value="1.2870971595709418E-17" />
-      <entry key="M10" value="3.5882935507987613E-9" />
-      <entry key="M15" value="2.355455251867038E-6" />
-      <entry key="M30" value="0.0017461456484408606" />
-      <entry key="H1" value="0.06836763079789751" />
-      <entry key="H2" value="0.5395068444151683" />
-      <entry key="H4" value="1.61360527558349" />
-      <entry key="D1" value="4.132025571145813" />
-      <entry key="W1" value="4.865404775471673" />
+      <entry key="S30" value="5.7806886260442895E-183" />
+      <entry key="S60" value="7.603083996671568E-92" />
+      <entry key="M2" value="2.757369035270956E-46" />
+      <entry key="M5" value="5.973074927476432E-19" />
+      <entry key="M10" value="7.730031789366361E-10" />
+      <entry key="M15" value="8.46454727706593E-7" />
+      <entry key="M30" value="0.001046754663534993" />
+      <entry key="H1" value="0.052933760663694" />
+      <entry key="H2" value="0.4747205895467857" />
+      <entry key="H4" value="1.5136234933660027" />
+      <entry key="D1" value="4.08820902819927" />
+      <entry key="W1" value="4.858000573149593" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9593147831942473" />
-      <entry key="MS500" value="1.1936229668303695" />
-      <entry key="S2" value="2.1104311639985722" />
-      <entry key="S5" value="2.5791985819041" />
-      <entry key="S10" value="2.777112984987589" />
-      <entry key="S30" value="3.0366363835769263" />
-      <entry key="S60" value="3.716969163979058" />
-      <entry key="M2" value="5.517899928899759" />
-      <entry key="M5" value="10.707510770196981" />
-      <entry key="M10" value="19.349354697328163" />
-      <entry key="M15" value="33.22219813953603" />
-      <entry key="M30" value="133.00701644986964" />
-      <entry key="H1" value="434.54081067463034" />
-      <entry key="H2" value="901.4239520181993" />
-      <entry key="H4" value="1355.8583773836535" />
-      <entry key="D1" value="1958.9856494969686" />
-      <entry key="W1" value="2092.6604191259944" />
+      <entry key="MS100" value="0.9460576467255961" />
+      <entry key="MS500" value="0.9897048819463933" />
+      <entry key="S2" value="1.1618856655146337" />
+      <entry key="S5" value="1.5051784539698583" />
+      <entry key="S10" value="1.8482302817831306" />
+      <entry key="S30" value="2.6190118440175634" />
+      <entry key="S60" value="3.122811138866424" />
+      <entry key="M2" value="3.525061105185872" />
+      <entry key="M5" value="6.026753717144282" />
+      <entry key="M10" value="15.293938573518115" />
+      <entry key="M15" value="27.48798195274345" />
+      <entry key="M30" value="102.36834113031726" />
+      <entry key="H1" value="364.09292011550383" />
+      <entry key="H2" value="823.8140536785592" />
+      <entry key="H4" value="1304.115767571233" />
+      <entry key="D1" value="1971.9166038438993" />
+      <entry key="W1" value="2123.4333737356483" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -166,36 +226,36 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build sonicunnamedmod.executor": "Run",
-    "Gradle.sonicunnamedmod [build].executor": "Run",
-    "Gradle.sonicunnamedmod [clean].executor": "Run",
-    "Gradle.sonicunnamedmod [runClient].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "block-refinement",
-    "git.auto.fetch.suggestion.counter": "2",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/serge/Desktop/sonicunnamedmod/src/main/resources/data/minecraft/tags/block",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build sonicunnamedmod.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sonicunnamedmod [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sonicunnamedmod [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sonicunnamedmod [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;block-refinement&quot;,
+    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/serge/Desktop/sonicunnamedmod/src/main/resources/data/minecraft/tags/block&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\data\minecraft\tags\block" />
@@ -328,7 +388,8 @@
       <workItem from="1782916749323" duration="3160000" />
       <workItem from="1782925663842" duration="44000" />
       <workItem from="1783276429154" duration="401000" />
-      <workItem from="1783276924778" duration="4478000" />
+      <workItem from="1783276924778" duration="4952000" />
+      <workItem from="1783291951611" duration="2368000" />
     </task>
     <task id="LOCAL-00001" summary="Unnecessary blocks have been removed">
       <option name="closed" value="true" />
@@ -474,7 +535,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783280274679</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added tags for blocks">
+      <option name="closed" value="true" />
+      <created>1783281657643</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1783281657643</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,6 +578,7 @@
     <MESSAGE value="Mod numbering change" />
     <MESSAGE value="Loot tables for palm blocks have been reworked." />
     <MESSAGE value="Recipe for palm blocks have been reworked." />
-    <option name="LAST_COMMIT_MESSAGE" value="Recipe for palm blocks have been reworked." />
+    <MESSAGE value="Added tags for blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tags for blocks" />
   </component>
 </project>
