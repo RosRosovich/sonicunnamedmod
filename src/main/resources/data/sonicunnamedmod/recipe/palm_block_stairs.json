@@ -1,7 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "key": { "P": { "item": "sonicunnamedmod:palm_block" } },
-  "pattern": ["P  ", "PP ", "PPP"],
-  "result": { "count": 4, "id": "sonicunnamedmod:palm_block_stairs" }
+  "key": {
+    "A": {
+      "item": "sonicunnamedmod:palm_block"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "sonicunnamedmod:palm_block_stairs"
+  }
 }

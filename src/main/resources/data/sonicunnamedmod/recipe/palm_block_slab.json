@@ -1,7 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "key": { "P": { "item": "sonicunnamedmod:palm_block" } },
-  "pattern": ["PPP"],
-  "result": { "count": 6, "id": "sonicunnamedmod:palm_block_slab" }
+  "key": {
+    "A": {
+      "item": "sonicunnamedmod:palm_block"
+    }
+  },
+  "pattern": [
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "sonicunnamedmod:palm_block_slab"
+  }
 }

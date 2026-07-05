@@ -1,6 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "ingredients": [{ "item": "sonicunnamedmod:palm_block" }],
-  "result": { "count": 4, "id": "sonicunnamedmod:palm_planks" }
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sonicunnamedmod:palm_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sonicunnamedmod:palm_planks"
+  }
 }
