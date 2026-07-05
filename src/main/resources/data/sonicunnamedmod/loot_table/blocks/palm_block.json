@@ -1,8 +1,21 @@
 {
   "type": "minecraft:block",
-  "pools": [{
-    "rolls": 1,
-    "entries": [{ "type": "minecraft:item", "name": "sonicunnamedmod:palm_block" }],
-    "conditions": [{ "condition": "minecraft:survives_explosion" }]
-  }]
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sonicunnamedmod:palm_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "sonicunnamedmod:blocks/palm_block"
 }
