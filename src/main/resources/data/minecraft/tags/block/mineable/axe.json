@@ -5,12 +5,17 @@
     "sonicunnamedmod:palm_block",
     "sonicunnamedmod:palm_block_slab",
     "sonicunnamedmod:palm_block_stairs",
+    "sonicunnamedmod:palm_core",
     "sonicunnamedmod:palm_planks",
     "sonicunnamedmod:palm_slab",
     "sonicunnamedmod:palm_stairs",
     "sonicunnamedmod:palm_fence",
     "sonicunnamedmod:palm_fence_gate",
     "sonicunnamedmod:palm_button",
-    "sonicunnamedmod:palm_pressure_plate"
+    "sonicunnamedmod:palm_pressure_plate",
+    "sonicunnamedmod:totem_angry_block",
+    "sonicunnamedmod:totem_creeper_block",
+    "sonicunnamedmod:totem_golem_block",
+    "sonicunnamedmod:totem_surprise_block"
   ]
 }
