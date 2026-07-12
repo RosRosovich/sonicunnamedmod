@@ -1,19 +1,25 @@
 package com.github.sonicunnamedmod.block;
 
 import com.github.sonicunnamedmod.ModBlocks;
+import com.github.sonicunnamedmod.SonicUnnamedMod;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -22,6 +28,10 @@ import net.minecraft.world.World;
 
 public class PalmCoreBlock extends Block {
     public static final MapCodec<PalmCoreBlock> CODEC = createCodec(PalmCoreBlock::new);
+    public static final RegistryKey<DamageType> PALM_NEEDLES_DAMAGE_TYPE = RegistryKey.of(
+            RegistryKeys.DAMAGE_TYPE,
+            Identifier.of(SonicUnnamedMod.MOD_ID, "palm_needles")
+    );
     private static final VoxelShape COLLISION_SHAPE = Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 15.0, 15.0);
     private static final VoxelShape OUTLINE_SHAPE = Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0);
 
@@ -68,6 +78,12 @@ public class PalmCoreBlock extends Block {
 
     @Override
     protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        entity.damage(world.getDamageSources().cactus(), 1.0f);
+        entity.damage(createPalmNeedlesDamageSource(world), 1.0f);
+    }
+
+    private static DamageSource createPalmNeedlesDamageSource(World world) {
+        return new DamageSource(world.getRegistryManager()
+                .get(RegistryKeys.DAMAGE_TYPE)
+                .entryOf(PALM_NEEDLES_DAMAGE_TYPE));
     }
 }

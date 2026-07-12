@@ -1,5 +1,9 @@
 {
   "itemGroup.sonicunnamedmod.blocks": "SonicUnnamedMod",
+  "death.attack.metal_spike": "%1$s напоролся на металлические шипы",
+  "death.attack.palm_needles": "%1$s укололся об пальмовые иглы",
+  "advancements.sonicunnamedmod.palm_needles.title": "Одна ошибка и ты ошибся",
+  "advancements.sonicunnamedmod.palm_needles.description": "Уколись об пальмовые иглы, это же так сложно!",
 
   "block.sonicunnamedmod.clover_flower": "Клеверный цветок",
   "block.sonicunnamedmod.green_hill_grass": "Зелено-холмовая трава",
@@ -29,6 +33,7 @@
   "block.sonicunnamedmod.cracked_green_hill_dirt": "Потрескавшаяся зелено-холмовая земля",
 
   "block.sonicunnamedmod.lava_glass": "Лавовое стекло",
+  "block.sonicunnamedmod.metal_spike": "Металлические шипы",
 
   "block.sonicunnamedmod.marble_tiles_grass_block": "Трава на мраморном плитняке",
   "block.sonicunnamedmod.marble_bricks_grass_block": "Трава на мраморных кирпичах",

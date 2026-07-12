@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a82ae4-d72b-47a0-a320-cd7b61eea798" name="Changes" comment="Changes of lava glass">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/textures/item/palm_thorn.png" afterDir="false" />
+    <list default="true" id="49a82ae4-d72b-47a0-a320-cd7b61eea798" name="Changes" comment="Build update">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/block/metal_spike.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/textures/block/metal_spike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/textures/item/clover_flower.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/ModBlocksClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/ModBlocksClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/block/PalmCoreBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sonicunnamedmod/block/PalmCoreBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/en_us.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/ru_ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/lang/ru_ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/palm_core.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sonicunnamedmod/loot_table/blocks/palm_core.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/item/clover_flower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/sonicunnamedmod/models/item/clover_flower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="788" />
+    <option name="cachedIndexableFilesCount" value="961" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -104,61 +106,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000000262" />
-      <entry key="MS500" value="1.0020409686179952" />
-      <entry key="S2" value="1.385867840013752" />
-      <entry key="S5" value="2.386567241339207" />
-      <entry key="S10" value="3.2739491276807797" />
-      <entry key="S30" value="4.282371633436453" />
-      <entry key="S60" value="4.797377377158608" />
-      <entry key="M2" value="8.511124870600629" />
-      <entry key="M5" value="47.969761840920974" />
-      <entry key="M10" value="148.4484124491535" />
-      <entry key="M15" value="259.01590635334713" />
-      <entry key="M30" value="594.0792004213415" />
-      <entry key="H1" value="1114.2419938169219" />
-      <entry key="H2" value="1801.5509553142515" />
-      <entry key="H4" value="2626.972760433331" />
-      <entry key="D1" value="4143.99993215451" />
-      <entry key="W1" value="4556.875257267012" />
+      <entry key="MS100" value="1.485655271243461" />
+      <entry key="MS500" value="2.9550557928060197" />
+      <entry key="S2" value="8.98944102574995" />
+      <entry key="S5" value="19.48004046453697" />
+      <entry key="S10" value="28.276751522124464" />
+      <entry key="S30" value="37.67269240790104" />
+      <entry key="S60" value="40.93609297134474" />
+      <entry key="M2" value="47.232983442453715" />
+      <entry key="M5" value="79.42226787556747" />
+      <entry key="M10" value="138.0159074010136" />
+      <entry key="M15" value="196.43084275497387" />
+      <entry key="M30" value="408.9108172337649" />
+      <entry key="H1" value="880.4334430957645" />
+      <entry key="H2" value="1632.443378744423" />
+      <entry key="H4" value="2581.787792562101" />
+      <entry key="D1" value="4398.6840439011285" />
+      <entry key="W1" value="4907.758309214112" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="5.419114403285645E-110" />
-      <entry key="S60" value="2.3278999889338054E-55" />
-      <entry key="M2" value="4.828400746491908E-28" />
-      <entry key="M5" value="1.297069978462802E-11" />
-      <entry key="M10" value="5.242464736552007E-6" />
-      <entry key="M15" value="4.4045248988434335E-4" />
-      <entry key="M30" value="0.04029400021114132" />
-      <entry key="H1" value="0.401003290729204" />
-      <entry key="H2" value="1.3781370909212656" />
-      <entry key="H4" value="3.002733988418237" />
-      <entry key="D1" value="7.2770016422730075" />
-      <entry key="W1" value="8.72423922757863" />
+      <entry key="S2" value="1.6190216897030548E-193" />
+      <entry key="S5" value="7.650698134051522E-78" />
+      <entry key="S10" value="2.7659895397581447E-39" />
+      <entry key="S30" value="1.403729772249689E-13" />
+      <entry key="S60" value="3.7466381894302134E-7" />
+      <entry key="M2" value="6.120978834655604E-4" />
+      <entry key="M5" value="0.05184756337332683" />
+      <entry key="M10" value="0.22770070533994152" />
+      <entry key="M15" value="0.3729185272440858" />
+      <entry key="M30" value="0.621588328363927" />
+      <entry key="H1" value="0.990426042727417" />
+      <entry key="H2" value="1.8788908501559627" />
+      <entry key="H4" value="3.4915021887577353" />
+      <entry key="D1" value="8.071839657004984" />
+      <entry key="W1" value="9.68899570725445" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9075191553171843" />
-      <entry key="MS500" value="0.9827744562230444" />
-      <entry key="S2" value="1.3784230592365088" />
-      <entry key="S5" value="2.3806287082393203" />
-      <entry key="S10" value="3.2696493722086624" />
-      <entry key="S30" value="4.280425760382649" />
-      <entry key="S60" value="4.795748008536837" />
-      <entry key="M2" value="8.507712962448519" />
-      <entry key="M5" value="47.964653237655064" />
-      <entry key="M10" value="148.44389684804878" />
-      <entry key="M15" value="259.0124152669618" />
-      <entry key="M30" value="594.1164238662367" />
-      <entry key="H1" value="1114.6404931164147" />
-      <entry key="H2" value="1802.9270016259254" />
-      <entry key="H4" value="2629.973863358921" />
-      <entry key="D1" value="4151.276460137703" />
-      <entry key="W1" value="4565.599420390839" />
+      <entry key="MS100" value="1.4344438194884046" />
+      <entry key="MS500" value="2.933319719020999" />
+      <entry key="S2" value="8.971414815730727" />
+      <entry key="S5" value="19.463348393457995" />
+      <entry key="S10" value="28.264228516191064" />
+      <entry key="S30" value="37.666990905755135" />
+      <entry key="S60" value="40.93297741971382" />
+      <entry key="M2" value="47.231801730451885" />
+      <entry key="M5" value="79.4726794350165" />
+      <entry key="M10" value="138.24194474935697" />
+      <entry key="M15" value="196.80195994488494" />
+      <entry key="M30" value="409.53042361059875" />
+      <entry key="H1" value="881.4218422792928" />
+      <entry key="H2" value="1634.320353304924" />
+      <entry key="H4" value="2585.277692576535" />
+      <entry key="D1" value="4406.755384614547" />
+      <entry key="W1" value="4917.447223638774" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -172,6 +174,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build sonicunnamedmod.executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
     "Gradle.sonicunnamedmod [build].executor": "Run",
     "Gradle.sonicunnamedmod [clean].executor": "Run",
     "Gradle.sonicunnamedmod [runClient].executor": "Run",
@@ -186,7 +189,7 @@
     "git-widget-placeholder": "block-refinement",
     "git.auto.fetch.suggestion.counter": "2",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/serge/Desktop/sonicunnamedmod/src/main/resources/assets/sonicunnamedmod/textures/block",
+    "last_opened_file_path": "C:/Users/serge/Desktop/sonicunnamedmod/src/main/resources/assets/sonicunnamedmod/textures/item",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -202,11 +205,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\models\block" />
       <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\textures\block" />
       <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\textures\item" />
       <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\data\minecraft\tags\item" />
       <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\data\minecraft\tags\block" />
-      <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\assets\sonicunnamedmod\models\block" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\serge\Desktop\sonicunnamedmod\src\main\resources\data\minecraft\tags\block" />
@@ -339,6 +342,7 @@
       <workItem from="1783494591910" duration="19000" />
       <workItem from="1783797320467" duration="8941000" />
       <workItem from="1783841563718" duration="1360000" />
+      <workItem from="1783851248485" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="Unnecessary blocks have been removed">
       <option name="closed" value="true" />
@@ -540,7 +544,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783846268627</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Palm Core refinement and Fabric API update">
+      <option name="closed" value="true" />
+      <created>1783847123945</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1783847123945</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Build update">
+      <option name="closed" value="true" />
+      <created>1783847190821</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1783847190821</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +578,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Unnecessary blocks have been removed" />
     <MESSAGE value="Changed gitignore" />
     <MESSAGE value="Mod ID and mod directory name have been changed." />
     <MESSAGE value="Changed the sorting of marble blocks in the creative inventory." />
@@ -582,6 +601,8 @@
     <MESSAGE value="The palm tree top has been renamed to the palm tree core, some block characteristics have been changed, and new loot tables have been added to some blocks." />
     <MESSAGE value="The build number has been changed" />
     <MESSAGE value="Changes of lava glass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes of lava glass" />
+    <MESSAGE value="Palm Core refinement and Fabric API update" />
+    <MESSAGE value="Build update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build update" />
   </component>
 </project>
