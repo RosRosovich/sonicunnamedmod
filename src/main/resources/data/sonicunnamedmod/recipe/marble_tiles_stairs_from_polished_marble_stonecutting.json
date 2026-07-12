@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "sonicunnamedmod:polished_marble"
+  },
+  "result": {
+    "count": 1,
+    "id": "sonicunnamedmod:marble_tiles_stairs"
+  }
+}

@@ -7,12 +7,10 @@
     }
   },
   "pattern": [
-    "A  ",
-    "AA ",
     "AAA"
   ],
   "result": {
-    "count": 4,
-    "id": "sonicunnamedmod:green_polished_marble_stairs"
+    "count": 6,
+    "id": "sonicunnamedmod:green_polished_marble_slab"
   }
 }
