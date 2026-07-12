@@ -64,7 +64,16 @@ public class ModBlocks {
             new PalmBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
 
     public static final Block PALM_CORE = register("palm_core",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+            new PalmCoreBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+
+    public static final Block THORNY_PALM_CORE = register("thorny_palm_core",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+
+    public static final Item PALM_THORN = Registry.register(
+            Registries.ITEM,
+            Identifier.of(SonicUnnamedMod.MOD_ID, "palm_thorn"),
+            new Item(new Item.Settings())
+    );
 
     public static final Block PALM_BLOCK = register("palm_block",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
@@ -225,6 +234,8 @@ public class ModBlocks {
             entries.add(PALM_LOG);
             entries.add(PALM_LEAVES);
             entries.add(PALM_CORE);
+            entries.add(THORNY_PALM_CORE);
+            entries.add(PALM_THORN);
             entries.add(PALM_BLOCK);
             entries.add(PALM_BLOCK_SLAB);
             entries.add(PALM_BLOCK_STAIRS);
