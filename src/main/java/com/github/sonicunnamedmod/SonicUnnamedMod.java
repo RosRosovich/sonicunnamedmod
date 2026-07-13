@@ -11,6 +11,10 @@ public class SonicUnnamedMod implements ModInitializer {
     public void onInitialize() {
         ModBlocks.registerAll();
         ModItems.registerAll();
+        ModComposter.register();
+        ModFlammableBlocks.register();
+        ModFuelRegistry.register();
+        ModTrades.register();
         GreenHillInteractionHandler.register();
         ThornyPalmCoreBlock.registerDamageHandler();
     }
