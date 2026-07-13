@@ -1,9 +1,13 @@
 package com.github.sonicunnamedmod;
 
 import com.github.sonicunnamedmod.block.*;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
+import net.fabricmc.fabric.api.object.builder.v1.block.type.WoodTypeBuilder;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -44,6 +48,9 @@ public class ModBlocks {
         return block;
     }
 
+    public static final WoodType PALM_WOOD_TYPE = WoodTypeBuilder.copyOf(WoodType.OAK)
+            .register(Identifier.of(SonicUnnamedMod.MOD_ID, "palm"), BlockSetType.OAK);
+
     public static final Block CLOVER_FLOWER = registerWithoutBlockItem("clover_flower",
             new CloverFlowerBlock(AbstractBlock.Settings.copy(Blocks.PEONY).nonOpaque())
     );
@@ -78,6 +85,15 @@ public class ModBlocks {
     public static final Block PALM_BLOCK = register("palm_block",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
 
+    public static final Block PALM_WOOD = register("palm_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+
+    public static final Block STRIPPED_PALM_BLOCK = register("stripped_palm_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final Block STRIPPED_PALM_WOOD = register("stripped_palm_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+
     public static final Block PALM_BLOCK_SLAB = register("palm_block_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
 
@@ -104,6 +120,20 @@ public class ModBlocks {
 
     public static final Block PALM_PRESSURE_PLATE = register("palm_pressure_plate",
             new PalmPressurePlateBlock(AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+
+    public static final Block PALM_SIGN = registerWithoutBlockItem("palm_sign",
+            new SignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
+
+    public static final Block PALM_WALL_SIGN = registerWithoutBlockItem("palm_wall_sign",
+            new WallSignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)
+                    .dropsLike(PALM_SIGN)));
+
+    public static final Block PALM_HANGING_SIGN = registerWithoutBlockItem("palm_hanging_sign",
+            new HangingSignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
+
+    public static final Block PALM_WALL_HANGING_SIGN = registerWithoutBlockItem("palm_wall_hanging_sign",
+            new WallHangingSignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)
+                    .dropsLike(PALM_HANGING_SIGN)));
 
     public static final Block CARVED_GREEN_HILL_DIRT = register("carved_green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
@@ -168,6 +198,12 @@ public class ModBlocks {
 
     public static void registerAll() {
         registerFlowerItem();
+        StrippableBlockRegistry.register(PALM_BLOCK, STRIPPED_PALM_BLOCK);
+        StrippableBlockRegistry.register(PALM_WOOD, STRIPPED_PALM_WOOD);
+        ((FabricBlockEntityType) BlockEntityType.SIGN).addSupportedBlock(PALM_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.SIGN).addSupportedBlock(PALM_WALL_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addSupportedBlock(PALM_HANGING_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addSupportedBlock(PALM_WALL_HANGING_SIGN);
 
         MARBLE_BRICKS = register("marble_bricks",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
@@ -240,6 +276,9 @@ public class ModBlocks {
             entries.add(THORNY_PALM_CORE);
             entries.add(PALM_THORN);
             entries.add(PALM_BLOCK);
+            entries.add(PALM_WOOD);
+            entries.add(STRIPPED_PALM_BLOCK);
+            entries.add(STRIPPED_PALM_WOOD);
             entries.add(PALM_BLOCK_SLAB);
             entries.add(PALM_BLOCK_STAIRS);
             entries.add(PALM_PLANKS);
@@ -249,6 +288,8 @@ public class ModBlocks {
             entries.add(PALM_FENCE_GATE);
             entries.add(PALM_BUTTON);
             entries.add(PALM_PRESSURE_PLATE);
+            entries.add(ModItems.PALM_SIGN_ITEM);
+            entries.add(ModItems.PALM_HANGING_SIGN_ITEM);
             entries.add(CRACKED_GREEN_HILL_DIRT);
             entries.add(CARVED_GREEN_HILL_DIRT);
 

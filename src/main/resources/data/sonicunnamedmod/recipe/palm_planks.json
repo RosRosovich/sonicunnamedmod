@@ -4,7 +4,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "sonicunnamedmod:palm_block"
+      "tag": "sonicunnamedmod:palm_blocks"
     }
   ],
   "result": {

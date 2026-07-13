@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_palm_blocks": {
+    "has_palm_block": {
       "conditions": {
         "items": [
           {
-            "items": "#sonicunnamedmod:palm_blocks"
+            "items": "sonicunnamedmod:palm_block"
           }
         ]
       },
@@ -13,21 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sonicunnamedmod:palm_planks"
+        "recipe": "sonicunnamedmod:palm_wood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_palm_blocks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_palm_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "sonicunnamedmod:palm_planks"
+      "sonicunnamedmod:palm_wood"
     ]
-  },
-  "sends_telemetry_event": true
+  }
 }

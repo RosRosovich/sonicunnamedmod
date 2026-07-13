@@ -3,6 +3,9 @@
   "values": [
     "sonicunnamedmod:palm_log",
     "sonicunnamedmod:palm_block",
+    "sonicunnamedmod:palm_wood",
+    "sonicunnamedmod:stripped_palm_block",
+    "sonicunnamedmod:stripped_palm_wood",
     "sonicunnamedmod:palm_block_slab",
     "sonicunnamedmod:palm_block_stairs",
     "sonicunnamedmod:palm_core",

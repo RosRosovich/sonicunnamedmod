@@ -10,6 +10,7 @@ public class SonicUnnamedMod implements ModInitializer {
     @Override
     public void onInitialize() {
         ModBlocks.registerAll();
+        ModItems.registerAll();
         GreenHillInteractionHandler.register();
         ThornyPalmCoreBlock.registerDamageHandler();
     }
