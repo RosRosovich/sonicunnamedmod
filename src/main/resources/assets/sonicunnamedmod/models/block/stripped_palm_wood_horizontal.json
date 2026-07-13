@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "sonicunnamedmod:block/stripped_palm_block",
+    "side": "sonicunnamedmod:block/stripped_palm_block"
+  }
+}

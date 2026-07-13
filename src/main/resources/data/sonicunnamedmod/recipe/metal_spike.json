@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sonicunnamedmod:metal_spike"
+  }
+}

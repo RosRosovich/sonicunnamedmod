@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "sonicunnamedmod:block/clover_flower_top"
+    "layer0": "sonicunnamedmod:item/clover_flower"
   }
 }

@@ -1,20 +1,35 @@
 {
   "type": "minecraft:block",
-  "pools": [{
-    "rolls": 1,
-    "entries": [{
-      "type": "minecraft:item",
-      "name": "sonicunnamedmod:palm_block_slab",
-      "functions": [{
-        "function": "minecraft:set_count",
-        "count": 2,
-        "conditions": [{
-          "condition": "minecraft:block_state_property",
-          "block": "sonicunnamedmod:palm_block_slab",
-          "properties": { "type": "double" }
-        }]
-      }]
-    }],
-    "conditions": [{ "condition": "minecraft:survives_explosion" }]
-  }]
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "sonicunnamedmod:palm_block_slab",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "sonicunnamedmod:palm_block_slab"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "sonicunnamedmod:blocks/palm_block_slab"
 }

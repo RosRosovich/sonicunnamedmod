@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "sonicunnamedmod:palm_thorn"
+    },
+    "B": {
+      "item": "sonicunnamedmod:palm_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sonicunnamedmod:wooden_spike"
+  }
+}

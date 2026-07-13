@@ -1,9 +1,13 @@
 package com.github.sonicunnamedmod;
 
 import com.github.sonicunnamedmod.block.*;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
+import net.fabricmc.fabric.api.object.builder.v1.block.type.WoodTypeBuilder;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -44,6 +48,9 @@ public class ModBlocks {
         return block;
     }
 
+    public static final WoodType PALM_WOOD_TYPE = WoodTypeBuilder.copyOf(WoodType.OAK)
+            .register(Identifier.of(SonicUnnamedMod.MOD_ID, "palm"), BlockSetType.OAK);
+
     public static final Block CLOVER_FLOWER = registerWithoutBlockItem("clover_flower",
             new CloverFlowerBlock(AbstractBlock.Settings.copy(Blocks.PEONY).nonOpaque())
     );
@@ -55,20 +62,37 @@ public class ModBlocks {
     );
 
     public static final Block GREEN_HILL_DIRT = register("green_hill_dirt",
-            new Block(AbstractBlock.Settings.copy(Blocks.DIRT)));
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
 
     public static final Block GREEN_HILL_GRASS_BLOCK = register("green_hill_grass_block",
-            new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK))
-    );
+            new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK).strength(0.6f,0.6f)));
 
     public static final Block PALM_LOG = register("palm_log",
             new PalmBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
 
-    public static final Block PALM_TOP = register("palm_top",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+    public static final Block PALM_CORE = register("palm_core",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block THORNY_PALM_CORE = register("thorny_palm_core",
+            new ThornyPalmCoreBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Item PALM_THORN = Registry.register(
+            Registries.ITEM,
+            Identifier.of(SonicUnnamedMod.MOD_ID, "palm_thorn"),
+            new Item(new Item.Settings())
+    );
 
     public static final Block PALM_BLOCK = register("palm_block",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+
+    public static final Block PALM_WOOD = register("palm_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+
+    public static final Block STRIPPED_PALM_BLOCK = register("stripped_palm_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final Block STRIPPED_PALM_WOOD = register("stripped_palm_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
 
     public static final Block PALM_BLOCK_SLAB = register("palm_block_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
@@ -97,23 +121,37 @@ public class ModBlocks {
     public static final Block PALM_PRESSURE_PLATE = register("palm_pressure_plate",
             new PalmPressurePlateBlock(AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
 
+    public static final Block PALM_SIGN = registerWithoutBlockItem("palm_sign",
+            new SignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
+
+    public static final Block PALM_WALL_SIGN = registerWithoutBlockItem("palm_wall_sign",
+            new WallSignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)
+                    .dropsLike(PALM_SIGN)));
+
+    public static final Block PALM_HANGING_SIGN = registerWithoutBlockItem("palm_hanging_sign",
+            new HangingSignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
+
+    public static final Block PALM_WALL_HANGING_SIGN = registerWithoutBlockItem("palm_wall_hanging_sign",
+            new WallHangingSignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)
+                    .dropsLike(PALM_HANGING_SIGN)));
+
     public static final Block CARVED_GREEN_HILL_DIRT = register("carved_green_hill_dirt",
-            new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()));
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
 
     public static final Block CRACKED_GREEN_HILL_DIRT = register("cracked_green_hill_dirt",
-            new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool().strength(1.5f, 6.0f)));
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
 
     public static final Block TOTEM_ANGRY_BLOCK = register("totem_angry_block",
-            new TotemBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(2.0f)));
+            new TotemBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(2.0f)));
 
     public static final Block TOTEM_CREEPER_BLOCK = register("totem_creeper_block",
-            new TotemBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(2.0f)));
+            new TotemBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(2.0f)));
 
     public static final Block TOTEM_GOLEM_BLOCK = register("totem_golem_block",
-            new TotemBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(2.0f)));
+            new TotemBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(2.0f)));
 
     public static final Block TOTEM_SURPRISE_BLOCK = register("totem_surprise_block",
-            new TotemBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(2.0f)));
+            new TotemBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(2.0f)));
 
     public static final Block TOTEM_WINGS = register("totem_wings",
             new TotemWingsBlock(AbstractBlock.Settings.copy(Blocks.STONE)
@@ -124,7 +162,7 @@ public class ModBlocks {
     public static Block MARBLE_BRICKS;
     public static Block MARBLE_TILES;
     public static Block POLISHED_MARBLE;
-    public static Block GREEN_MARBLE_BRICK;
+    public static Block GREEN_MARBLE_BRICKS;
     public static Block GREEN_POLISHED_MARBLE;
     public static Block GREEN_MARBLE_TILES;
 
@@ -135,6 +173,12 @@ public class ModBlocks {
                     .strength(0.3f)
                     .sounds(BlockSoundGroup.GLASS)
             ));
+
+    public static final Block METAL_SPIKE = register("metal_spike",
+            new MetalSpikeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).requiresTool().nonOpaque()));
+
+    public static final Block WOODEN_SPIKE = register("wooden_spike",
+            new WoodenSpikeBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
 
     public static final Block PALM_LEAVES = register("palm_leaves",
             new PalmLeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
@@ -157,6 +201,12 @@ public class ModBlocks {
 
     public static void registerAll() {
         registerFlowerItem();
+        StrippableBlockRegistry.register(PALM_BLOCK, STRIPPED_PALM_BLOCK);
+        StrippableBlockRegistry.register(PALM_WOOD, STRIPPED_PALM_WOOD);
+        ((FabricBlockEntityType) BlockEntityType.SIGN).addSupportedBlock(PALM_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.SIGN).addSupportedBlock(PALM_WALL_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addSupportedBlock(PALM_HANGING_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addSupportedBlock(PALM_WALL_HANGING_SIGN);
 
         MARBLE_BRICKS = register("marble_bricks",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
@@ -188,11 +238,11 @@ public class ModBlocks {
                 new PolishedMarbleGrassBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().strength(1.5f, 6.0f))
         );
 
-        GREEN_MARBLE_BRICK = register("green_marble_brick",
+        GREEN_MARBLE_BRICKS = register("green_marble_bricks",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
-        register("green_marble_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
-        register("green_marble_brick_stairs", new StairsBlock(GREEN_MARBLE_BRICK.getDefaultState(), AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
-        register("green_marble_brick_wall", new WallBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICK).requiresTool()));
+        register("green_marble_bricks_slab", new SlabBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICKS).requiresTool()));
+        register("green_marble_bricks_stairs", new StairsBlock(GREEN_MARBLE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(GREEN_MARBLE_BRICKS).requiresTool()));
+        register("green_marble_bricks_wall", new WallBlock(AbstractBlock.Settings.copy(GREEN_MARBLE_BRICKS).requiresTool()));
 
         GREEN_POLISHED_MARBLE = register("green_polished_marble",
                 new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
@@ -225,8 +275,13 @@ public class ModBlocks {
             entries.add(GREEN_HILL_GRASS_BLOCK);
             entries.add(PALM_LOG);
             entries.add(PALM_LEAVES);
-            entries.add(PALM_TOP);
+            entries.add(PALM_CORE);
+            entries.add(THORNY_PALM_CORE);
+            entries.add(PALM_THORN);
             entries.add(PALM_BLOCK);
+            entries.add(PALM_WOOD);
+            entries.add(STRIPPED_PALM_BLOCK);
+            entries.add(STRIPPED_PALM_WOOD);
             entries.add(PALM_BLOCK_SLAB);
             entries.add(PALM_BLOCK_STAIRS);
             entries.add(PALM_PLANKS);
@@ -236,6 +291,8 @@ public class ModBlocks {
             entries.add(PALM_FENCE_GATE);
             entries.add(PALM_BUTTON);
             entries.add(PALM_PRESSURE_PLATE);
+            entries.add(ModItems.PALM_SIGN_ITEM);
+            entries.add(ModItems.PALM_HANGING_SIGN_ITEM);
             entries.add(CRACKED_GREEN_HILL_DIRT);
             entries.add(CARVED_GREEN_HILL_DIRT);
 
@@ -246,6 +303,8 @@ public class ModBlocks {
             entries.add(TOTEM_WINGS);
 
             entries.add(LAVA_GLASS);
+            entries.add(METAL_SPIKE);
+            entries.add(WOODEN_SPIKE);
             entries.add(MARBLE_TILES_GRASS_BLOCK);
             entries.add(MARBLE_BRICKS_GRASS_BLOCK);
             entries.add(POLISHED_MARBLE_GRASS_BLOCK);
@@ -265,10 +324,10 @@ public class ModBlocks {
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_stairs")));
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "polished_marble_wall")));
 
-            entries.add(GREEN_MARBLE_BRICK);
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_slab")));
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_stairs")));
-            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_brick_wall")));
+            entries.add(GREEN_MARBLE_BRICKS);
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_bricks_slab")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_bricks_stairs")));
+            entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_marble_bricks_wall")));
 
             entries.add(GREEN_POLISHED_MARBLE);
             entries.add(Registries.BLOCK.get(Identifier.of(SonicUnnamedMod.MOD_ID, "green_polished_marble_slab")));

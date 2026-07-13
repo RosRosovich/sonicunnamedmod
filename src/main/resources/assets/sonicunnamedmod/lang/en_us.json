@@ -1,5 +1,10 @@
 {
   "itemGroup.sonicunnamedmod.blocks": "SonicUnnamedMod",
+  "death.attack.metal_spike": "%1$s was impaled on metal spikes",
+  "death.attack.wooden_spike": "%1$s was impaled on wooden spikes",
+  "death.attack.palm_needles": "%1$s was pricked by palm needles",
+  "advancements.sonicunnamedmod.palm_needles.title": "One Mistake and You Mistook",
+  "advancements.sonicunnamedmod.palm_needles.description": "Prick yourself on palm needles. So difficult!",
 
   "block.sonicunnamedmod.clover_flower": "Clover Flower",
   "block.sonicunnamedmod.green_hill_grass": "Green Hill Grass",
@@ -7,8 +12,13 @@
   "block.sonicunnamedmod.green_hill_grass_block": "Green Hill Grass Block",
   "block.sonicunnamedmod.palm_log": "Palm Log",
   "block.sonicunnamedmod.palm_leaves": "Palm Leaves",
-  "block.sonicunnamedmod.palm_top": "Palm Top",
+  "block.sonicunnamedmod.palm_core": "Palm Core",
+  "block.sonicunnamedmod.thorny_palm_core": "Thorny Palm Core",
+  "item.sonicunnamedmod.palm_thorn": "Palm Thorn",
   "block.sonicunnamedmod.palm_block": "Palm Block",
+  "block.sonicunnamedmod.palm_wood": "Palm Wood",
+  "block.sonicunnamedmod.stripped_palm_block": "Stripped Palm Block",
+  "block.sonicunnamedmod.stripped_palm_wood": "Stripped Palm Wood",
   "block.sonicunnamedmod.palm_block_slab": "Palm Block Slab",
   "block.sonicunnamedmod.palm_block_stairs": "Palm Block Stairs",
   "block.sonicunnamedmod.palm_planks": "Palm Planks",
@@ -18,6 +28,8 @@
   "block.sonicunnamedmod.palm_fence_gate": "Palm Fence Gate",
   "block.sonicunnamedmod.palm_button": "Palm Button",
   "block.sonicunnamedmod.palm_pressure_plate": "Palm Pressure Plate",
+  "block.sonicunnamedmod.palm_sign": "Palm Sign",
+  "block.sonicunnamedmod.palm_hanging_sign": "Palm Hanging Sign",
   "block.sonicunnamedmod.carved_green_hill_dirt": "Carved Green Hill Dirt",
   "block.sonicunnamedmod.totem_angry_block": "Angry Totem Block",
   "block.sonicunnamedmod.totem_creeper_block": "Creeper Totem Block",
@@ -28,6 +40,8 @@
 
 
   "block.sonicunnamedmod.lava_glass": "Lava Glass",
+  "block.sonicunnamedmod.metal_spike": "Metal Spike",
+  "block.sonicunnamedmod.wooden_spike": "Wooden Spike",
 
   "block.sonicunnamedmod.marble_tiles_grass_block": "Grass on Marble Tiles",
   "block.sonicunnamedmod.marble_bricks_grass_block": "Grass on Marble Bricks",
@@ -48,10 +62,10 @@
   "block.sonicunnamedmod.polished_marble_stairs": "Polished Marble Stairs",
   "block.sonicunnamedmod.polished_marble_wall": "Polished Marble Wall",
 
-  "block.sonicunnamedmod.green_marble_brick": "Green Marble Bricks",
-  "block.sonicunnamedmod.green_marble_brick_slab": "Green Marble Brick Slab",
-  "block.sonicunnamedmod.green_marble_brick_stairs": "Green Marble Brick Stairs",
-  "block.sonicunnamedmod.green_marble_brick_wall": "Green Marble Brick Wall",
+  "block.sonicunnamedmod.green_marble_bricks": "Green Marble Bricks",
+  "block.sonicunnamedmod.green_marble_bricks_slab": "Green Marble Brick Slab",
+  "block.sonicunnamedmod.green_marble_bricks_stairs": "Green Marble Brick Stairs",
+  "block.sonicunnamedmod.green_marble_bricks_wall": "Green Marble Brick Wall",
 
   "block.sonicunnamedmod.green_polished_marble": "Green Polished Marble",
   "block.sonicunnamedmod.green_polished_marble_slab": "Green Polished Marble Slab",

@@ -1,7 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "key": { "P": { "item": "sonicunnamedmod:palm_planks" } },
-  "pattern": ["PPP"],
-  "result": { "count": 6, "id": "sonicunnamedmod:palm_slab" }
+  "group": "wooden_slab",
+  "key": {
+    "#": {
+      "item": "sonicunnamedmod:palm_planks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "sonicunnamedmod:palm_slab"
+  }
 }

@@ -1,15 +1,26 @@
 {
   "replace": false,
   "values": [
+    "sonicunnamedmod:palm_log",
     "sonicunnamedmod:palm_block",
+    "sonicunnamedmod:palm_wood",
+    "sonicunnamedmod:stripped_palm_block",
+    "sonicunnamedmod:stripped_palm_wood",
     "sonicunnamedmod:palm_block_slab",
     "sonicunnamedmod:palm_block_stairs",
+    "sonicunnamedmod:palm_core",
+    "sonicunnamedmod:thorny_palm_core",
     "sonicunnamedmod:palm_planks",
     "sonicunnamedmod:palm_slab",
     "sonicunnamedmod:palm_stairs",
     "sonicunnamedmod:palm_fence",
     "sonicunnamedmod:palm_fence_gate",
     "sonicunnamedmod:palm_button",
-    "sonicunnamedmod:palm_pressure_plate"
+    "sonicunnamedmod:palm_pressure_plate",
+    "sonicunnamedmod:wooden_spike",
+    "sonicunnamedmod:totem_angry_block",
+    "sonicunnamedmod:totem_creeper_block",
+    "sonicunnamedmod:totem_golem_block",
+    "sonicunnamedmod:totem_surprise_block"
   ]
 }

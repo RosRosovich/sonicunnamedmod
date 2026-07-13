@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_palm_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sonicunnamedmod:stripped_palm_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sonicunnamedmod:stripped_palm_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_palm_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sonicunnamedmod:stripped_palm_wood"
+    ]
+  }
+}
