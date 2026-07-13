@@ -177,6 +177,9 @@ public class ModBlocks {
     public static final Block METAL_SPIKE = register("metal_spike",
             new MetalSpikeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).requiresTool().nonOpaque()));
 
+    public static final Block WOODEN_SPIKE = register("wooden_spike",
+            new WoodenSpikeBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+
     public static final Block PALM_LEAVES = register("palm_leaves",
             new PalmLeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
                     .nonOpaque()
@@ -301,6 +304,7 @@ public class ModBlocks {
 
             entries.add(LAVA_GLASS);
             entries.add(METAL_SPIKE);
+            entries.add(WOODEN_SPIKE);
             entries.add(MARBLE_TILES_GRASS_BLOCK);
             entries.add(MARBLE_BRICKS_GRASS_BLOCK);
             entries.add(POLISHED_MARBLE_GRASS_BLOCK);

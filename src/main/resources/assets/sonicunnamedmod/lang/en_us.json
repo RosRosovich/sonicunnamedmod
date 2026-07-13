@@ -1,6 +1,7 @@
 {
   "itemGroup.sonicunnamedmod.blocks": "SonicUnnamedMod",
   "death.attack.metal_spike": "%1$s was impaled on metal spikes",
+  "death.attack.wooden_spike": "%1$s was impaled on wooden spikes",
   "death.attack.palm_needles": "%1$s was pricked by palm needles",
   "advancements.sonicunnamedmod.palm_needles.title": "One Mistake and You Mistook",
   "advancements.sonicunnamedmod.palm_needles.description": "Prick yourself on palm needles. So difficult!",
@@ -40,6 +41,7 @@
 
   "block.sonicunnamedmod.lava_glass": "Lava Glass",
   "block.sonicunnamedmod.metal_spike": "Metal Spike",
+  "block.sonicunnamedmod.wooden_spike": "Wooden Spike",
 
   "block.sonicunnamedmod.marble_tiles_grass_block": "Grass on Marble Tiles",
   "block.sonicunnamedmod.marble_bricks_grass_block": "Grass on Marble Bricks",

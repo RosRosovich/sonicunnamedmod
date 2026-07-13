@@ -1,6 +1,7 @@
 {
   "itemGroup.sonicunnamedmod.blocks": "SonicUnnamedMod",
   "death.attack.metal_spike": "%1$s напоролся на металлические шипы",
+  "death.attack.wooden_spike": "%1$s напоролся на деревянные шипы",
   "death.attack.palm_needles": "%1$s укололся об пальмовые иглы",
   "advancements.sonicunnamedmod.palm_needles.title": "Одна ошибка и ты ошибся",
   "advancements.sonicunnamedmod.palm_needles.description": "Уколись об пальмовые иглы, это же так сложно!",
@@ -39,6 +40,7 @@
 
   "block.sonicunnamedmod.lava_glass": "Лавовое стекло",
   "block.sonicunnamedmod.metal_spike": "Металлические шипы",
+  "block.sonicunnamedmod.wooden_spike": "Деревянные шипы",
 
   "block.sonicunnamedmod.marble_tiles_grass_block": "Трава на мраморном плитняке",
   "block.sonicunnamedmod.marble_bricks_grass_block": "Трава на мраморных кирпичах",
