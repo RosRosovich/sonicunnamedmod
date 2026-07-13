@@ -55,17 +55,52 @@ public class ModBlocks {
             new CloverFlowerBlock(AbstractBlock.Settings.copy(Blocks.PEONY).nonOpaque())
     );
 
+    public static final Block GREEN_HILL_SUNFLOWER = registerWithoutBlockItem("green_hill_sunflower",
+            new GreenHillSunflowerBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)
+                    .nonOpaque()
+                    .strength(0.0f)
+                    .noCollision()
+            )
+    );
+
+    public static final Block GREEN_HILL_BUSH = register("green_hill_bush",
+            new GreenHillBushBlock(
+                    AbstractBlock.Settings.copy(Blocks.SHORT_GRASS).nonOpaque()
+            )
+    );
+
     public static final Block GREEN_HILL_GRASS = register("green_hill_grass",
             new GreenHillGrassPlantBlock(
                     AbstractBlock.Settings.copy(Blocks.SHORT_GRASS).nonOpaque()
             )
     );
 
+    public static final Block GREEN_HILL_GRASS_BLOCK = register("green_hill_grass_block",
+            new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK).strength(0.6f,0.6f)));
+
     public static final Block GREEN_HILL_DIRT = register("green_hill_dirt",
             new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
 
-    public static final Block GREEN_HILL_GRASS_BLOCK = register("green_hill_grass_block",
-            new GreenHillTurfBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK).strength(0.6f,0.6f)));
+    public static final Block CRACKED_GREEN_HILL_DIRT = register("cracked_green_hill_dirt",
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
+
+    public static final Block CARVED_GREEN_HILL_DIRT = register("carved_green_hill_dirt",
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
+
+    public static final Block LAVA_GLASS = register("lava_glass",
+            new LavaGlassBlock(AbstractBlock.Settings.create()
+                    .nonOpaque()
+                    .luminance(state -> 15)
+                    .strength(0.3f)
+                    .sounds(BlockSoundGroup.GLASS)
+            ));
+
+    public static final Block METAL_SPIKE = register("metal_spike",
+            new MetalSpikeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).requiresTool().nonOpaque()));
+
+    public static final Block WOODEN_SPIKE = register("wooden_spike",
+            new WoodenSpikeBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+
 
     public static final Block PALM_LOG = register("palm_log",
             new PalmBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
@@ -135,12 +170,6 @@ public class ModBlocks {
             new WallHangingSignBlock(PALM_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)
                     .dropsLike(PALM_HANGING_SIGN)));
 
-    public static final Block CARVED_GREEN_HILL_DIRT = register("carved_green_hill_dirt",
-            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
-
-    public static final Block CRACKED_GREEN_HILL_DIRT = register("cracked_green_hill_dirt",
-            new Block(AbstractBlock.Settings.copy(Blocks.DIRT).strength(0.5f, 0.5f)));
-
     public static final Block TOTEM_ANGRY_BLOCK = register("totem_angry_block",
             new TotemBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(2.0f)));
 
@@ -166,20 +195,6 @@ public class ModBlocks {
     public static Block GREEN_POLISHED_MARBLE;
     public static Block GREEN_MARBLE_TILES;
 
-    public static final Block LAVA_GLASS = register("lava_glass",
-            new LavaGlassBlock(AbstractBlock.Settings.create()
-                    .nonOpaque()
-                    .luminance(state -> 15)
-                    .strength(0.3f)
-                    .sounds(BlockSoundGroup.GLASS)
-            ));
-
-    public static final Block METAL_SPIKE = register("metal_spike",
-            new MetalSpikeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).requiresTool().nonOpaque()));
-
-    public static final Block WOODEN_SPIKE = register("wooden_spike",
-            new WoodenSpikeBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
-
     public static final Block PALM_LEAVES = register("palm_leaves",
             new PalmLeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
                     .nonOpaque()
@@ -197,6 +212,9 @@ public class ModBlocks {
         Identifier id = Identifier.of(SonicUnnamedMod.MOD_ID, "clover_flower");
         Item flowerItem = Registry.register(Registries.ITEM, id,
                 new TallBlockItem(CLOVER_FLOWER, new Item.Settings()));
+        Identifier sunflowerId = Identifier.of(SonicUnnamedMod.MOD_ID, "green_hill_sunflower");
+        Item sunflowerItem = Registry.register(Registries.ITEM, sunflowerId,
+                new TallBlockItem(GREEN_HILL_SUNFLOWER, new Item.Settings()));
     }
 
     public static void registerAll() {
@@ -270,9 +288,17 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP_KEY).register(entries -> {
             entries.add(CLOVER_FLOWER);
+            entries.add(GREEN_HILL_SUNFLOWER);
+            entries.add(GREEN_HILL_BUSH);
             entries.add(GREEN_HILL_GRASS);
-            entries.add(GREEN_HILL_DIRT);
             entries.add(GREEN_HILL_GRASS_BLOCK);
+            entries.add(GREEN_HILL_DIRT);
+            entries.add(CRACKED_GREEN_HILL_DIRT);
+            entries.add(CARVED_GREEN_HILL_DIRT);
+            entries.add(LAVA_GLASS);
+            entries.add(METAL_SPIKE);
+            entries.add(WOODEN_SPIKE);
+
             entries.add(PALM_LOG);
             entries.add(PALM_LEAVES);
             entries.add(PALM_CORE);
@@ -293,8 +319,6 @@ public class ModBlocks {
             entries.add(PALM_PRESSURE_PLATE);
             entries.add(ModItems.PALM_SIGN_ITEM);
             entries.add(ModItems.PALM_HANGING_SIGN_ITEM);
-            entries.add(CRACKED_GREEN_HILL_DIRT);
-            entries.add(CARVED_GREEN_HILL_DIRT);
 
             entries.add(TOTEM_ANGRY_BLOCK);
             entries.add(TOTEM_CREEPER_BLOCK);
@@ -302,9 +326,6 @@ public class ModBlocks {
             entries.add(TOTEM_SURPRISE_BLOCK);
             entries.add(TOTEM_WINGS);
 
-            entries.add(LAVA_GLASS);
-            entries.add(METAL_SPIKE);
-            entries.add(WOODEN_SPIKE);
             entries.add(MARBLE_TILES_GRASS_BLOCK);
             entries.add(MARBLE_BRICKS_GRASS_BLOCK);
             entries.add(POLISHED_MARBLE_GRASS_BLOCK);

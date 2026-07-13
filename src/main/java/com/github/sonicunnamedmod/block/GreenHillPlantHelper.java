@@ -24,6 +24,8 @@ public class GreenHillPlantHelper {
     static {
         PLANTS.add(ModBlocks.CLOVER_FLOWER.getDefaultState());
         PLANTS.add(ModBlocks.GREEN_HILL_GRASS.getDefaultState());
+        PLANTS.add(ModBlocks.GREEN_HILL_SUNFLOWER.getDefaultState());
+        PLANTS.add(ModBlocks.GREEN_HILL_BUSH.getDefaultState());
     }
 
     public static void spawnPlantOnBlock(World world, BlockPos pos, PlayerEntity player, ItemStack stack) {
@@ -55,7 +57,15 @@ public class GreenHillPlantHelper {
                         below.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK) ||
                         below.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK) ||
                         below.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK)) {
+
                     BlockState plant = PLANTS.get(world.random.nextInt(PLANTS.size()));
+
+                    if (plant.getBlock() instanceof GreenHillSunflowerBlock) {
+                        if (!world.isAir(plantPos.up())) {
+                            continue;
+                        }
+                    }
+
                     placePlant(world, plantPos, plant);
                     spawnEffects(world, pos);
                     return;
@@ -72,7 +82,9 @@ public class GreenHillPlantHelper {
                 state.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK) ||
                 state.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK) ||
                 state.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK) ||
-                state.isOf(ModBlocks.GREEN_HILL_GRASS);
+                state.isOf(ModBlocks.GREEN_HILL_GRASS)  ||
+                state.isOf(ModBlocks.GREEN_HILL_SUNFLOWER) ||
+                state.isOf(ModBlocks.GREEN_HILL_BUSH);
     }
 
     public static void duplicatePlant(World world, BlockPos pos, PlayerEntity player, ItemStack stack) {
@@ -80,7 +92,10 @@ public class GreenHillPlantHelper {
 
         BlockState state = world.getBlockState(pos);
 
-        if (!state.isOf(ModBlocks.CLOVER_FLOWER) && !state.isOf(ModBlocks.GREEN_HILL_GRASS)) {
+        if (!state.isOf(ModBlocks.CLOVER_FLOWER) &&
+                !state.isOf(ModBlocks.GREEN_HILL_GRASS) &&
+                !state.isOf(ModBlocks.GREEN_HILL_SUNFLOWER) &&
+                !state.isOf(ModBlocks.GREEN_HILL_BUSH)) {
             return;
         }
 
@@ -100,6 +115,13 @@ public class GreenHillPlantHelper {
                         below.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK) ||
                         below.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK) ||
                         below.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK)) {
+
+                    if (state.getBlock() instanceof GreenHillSunflowerBlock) {
+                        if (!world.isAir(plantPos.up())) {
+                            continue;
+                        }
+                    }
+
                     placePlant(world, plantPos, state);
                     spawnEffects(world, pos);
                     return;
@@ -113,6 +135,10 @@ public class GreenHillPlantHelper {
             if (world.isAir(pos.up())) {
                 world.setBlockState(pos, plant.with(TallPlantBlock.HALF, DoubleBlockHalf.LOWER));
                 world.setBlockState(pos.up(), plant.with(TallPlantBlock.HALF, DoubleBlockHalf.UPPER));
+            }
+        } else if (plant.getBlock() instanceof GreenHillSunflowerBlock) {
+            if (world.isAir(pos) && world.isAir(pos.up())) {
+                world.setBlockState(pos, plant);
             }
         } else {
             world.setBlockState(pos, plant);

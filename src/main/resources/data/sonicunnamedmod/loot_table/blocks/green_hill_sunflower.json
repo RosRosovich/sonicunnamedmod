@@ -5,19 +5,17 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "items": "minecraft:shears"
-          }
+          "condition": "minecraft:survives_explosion"
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "sonicunnamedmod:green_hill_grass"
+          "name": "sonicunnamedmod:green_hill_sunflower"
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "sonicunnamedmod:blocks/green_hill_sunflower"
 }
