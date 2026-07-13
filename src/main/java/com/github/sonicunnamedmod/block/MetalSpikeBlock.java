@@ -5,6 +5,7 @@ import com.github.sonicunnamedmod.SonicUnnamedMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageType;
 import net.minecraft.registry.RegistryKey;
@@ -46,7 +47,9 @@ public class MetalSpikeBlock extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        entity.damage(world.getDamageSources().cactus(), 1.0f);
+        if (!(entity instanceof ItemEntity)) {
+            entity.damage(world.getDamageSources().cactus(), 2.0f);
+        }
         super.onSteppedOn(world, pos, state, entity);
     }
 

@@ -64,10 +64,10 @@ public class ModBlocks {
             new PalmBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
 
     public static final Block PALM_CORE = register("palm_core",
-            new PalmCoreBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
     public static final Block THORNY_PALM_CORE = register("thorny_palm_core",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+            new ThornyPalmCoreBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
     public static final Item PALM_THORN = Registry.register(
             Registries.ITEM,

@@ -11,13 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 3.0
-            }
-          ],
-          "name": "sonicunnamedmod:palm_thorn"
+          "name": "sonicunnamedmod:palm_core"
         }
       ],
       "rolls": 1.0
