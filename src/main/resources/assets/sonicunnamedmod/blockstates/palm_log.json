@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "sonicunnamedmod:block/palm_log" }
+    "axis=y": { "model": "sonicunnamedmod:block/palm_log" },
+    "axis=z": { "model": "sonicunnamedmod:block/palm_log", "x": 90 },
+    "axis=x": { "model": "sonicunnamedmod:block/palm_log", "x": 90, "y": 90 }
   }
 }
