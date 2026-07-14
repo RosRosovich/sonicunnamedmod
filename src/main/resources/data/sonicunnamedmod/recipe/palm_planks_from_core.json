@@ -4,11 +4,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "sonicunnamedmod:palm_blocks"
+      "tag": "sonicunnamedmod:palm_cores"
     }
   ],
   "result": {
-    "count": 2,
+    "count": 4,
     "id": "sonicunnamedmod:palm_planks"
   }
 }

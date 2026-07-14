@@ -72,6 +72,25 @@ public final class ModTrades {
                     )
             );
 
+            factories.add((entity, random) ->
+                    new TradeOffer(
+                            new TradedItem(Items.EMERALD, 3),
+                            new ItemStack(ModBlocks.GREEN_HILL_GRASS_BLOCK, 6),
+                            8,
+                            1,
+                            0.05F
+                    )
+            );
+
+            factories.add((entity, random) ->
+                    new TradeOffer(
+                            new TradedItem(Items.EMERALD, 3),
+                            new ItemStack(ModBlocks.THORNY_PALM_CORE, 2),
+                            8,
+                            1,
+                            0.05F
+                    )
+            );
         });
     }
 }

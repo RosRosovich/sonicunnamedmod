@@ -3,10 +3,7 @@
     "sonicunnamedmod:palm_log",
     "sonicunnamedmod:palm_block",
     "sonicunnamedmod:palm_wood",
-    "sonicunnamedmod:palm_core",
-    "sonicunnamedmod:thorny_palm_core",
     "sonicunnamedmod:stripped_palm_block",
-    "sonicunnamedmod:stripped_palm_wood",
-    "sonicunnamedmod:stripped_palm_core"
+    "sonicunnamedmod:stripped_palm_wood"
   ]
 }
