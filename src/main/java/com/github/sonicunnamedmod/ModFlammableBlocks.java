@@ -31,6 +31,7 @@ public class ModFlammableBlocks {
         fire.registerFlammableBlock(ModBlocks.PALM_WALL_HANGING_SIGN, 5, 20);
 
         fire.registerFlammableBlock(ModBlocks.PALM_CORE, 5, 5);
+        fire.registerFlammableBlock(ModBlocks.STRIPPED_PALM_CORE, 5, 5);
         fire.registerFlammableBlock(ModBlocks.THORNY_PALM_CORE, 5, 5);
         fire.registerFlammableBlock(ModBlocks.PALM_LOG, 5, 5);
     }

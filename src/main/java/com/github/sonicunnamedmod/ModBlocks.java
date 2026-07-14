@@ -108,6 +108,10 @@ public class ModBlocks {
     public static final Block PALM_CORE = register("palm_core",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
+    public static final Block STRIPPED_PALM_CORE= register("stripped_palm_core",
+            new PalmCoreStrippedBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS))
+    );
+
     public static final Block THORNY_PALM_CORE = register("thorny_palm_core",
             new ThornyPalmCoreBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
@@ -302,6 +306,7 @@ public class ModBlocks {
             entries.add(PALM_LOG);
             entries.add(PALM_LEAVES);
             entries.add(PALM_CORE);
+            entries.add(STRIPPED_PALM_CORE);
             entries.add(THORNY_PALM_CORE);
             entries.add(PALM_THORN);
             entries.add(PALM_BLOCK);

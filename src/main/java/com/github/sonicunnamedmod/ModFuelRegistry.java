@@ -13,6 +13,7 @@ public class ModFuelRegistry {
         FuelRegistry.INSTANCE.add(ModBlocks.STRIPPED_PALM_WOOD.asItem(), 300);
         FuelRegistry.INSTANCE.add(ModBlocks.PALM_LOG.asItem(), 300);
         FuelRegistry.INSTANCE.add(ModBlocks.PALM_CORE.asItem(), 300);
+        FuelRegistry.INSTANCE.add(ModBlocks.STRIPPED_PALM_CORE.asItem(), 300);
         FuelRegistry.INSTANCE.add(ModBlocks.THORNY_PALM_CORE.asItem(), 300);
 
         FuelRegistry.INSTANCE.add(ModBlocks.PALM_PLANKS.asItem(), 300);

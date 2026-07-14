@@ -1,6 +1,7 @@
 package com.github.sonicunnamedmod;
 
 import com.github.sonicunnamedmod.block.GreenHillInteractionHandler;
+import com.github.sonicunnamedmod.block.PalmCoreInteractionHandler;
 import com.github.sonicunnamedmod.block.ThornyPalmCoreBlock;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,5 +18,6 @@ public class SonicUnnamedMod implements ModInitializer {
         ModTrades.register();
         GreenHillInteractionHandler.register();
         ThornyPalmCoreBlock.registerDamageHandler();
+        PalmCoreInteractionHandler.register();
     }
 }
