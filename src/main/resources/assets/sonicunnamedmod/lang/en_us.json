@@ -1,5 +1,6 @@
 {
   "itemGroup.sonicunnamedmod.blocks": "SonicUnnamedMod",
+  "block.sonicunnamedmod.palm_door": "Palm Door",
   "death.attack.metal_spike": "%1$s was impaled on metal spikes",
   "death.attack.wooden_spike": "%1$s was impaled on wooden spikes",
   "death.attack.palm_needles": "%1$s was pricked by palm needles",

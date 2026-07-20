@@ -1,48 +1,105 @@
 {
   "multipart": [
     {
-      "apply": {
-        "model": "sonicunnamedmod:block/palm_fence1"
-      }
+      "when": {
+        "OR": [
+          {"north": "false", "east": "false", "south": "false", "west": "false"},
+          {"north": "true", "east": "false", "south": "false", "west": "false"},
+          {"north": "false", "east": "true", "south": "false", "west": "false"},
+          {"north": "false", "east": "false", "south": "true", "west": "false"},
+          {"north": "false", "east": "false", "south": "false", "west": "true"},
+          {"north": "true", "east": "true", "south": "false", "west": "false"},
+          {"north": "true", "east": "false", "south": "false", "west": "true"},
+          {"north": "false", "east": "true", "south": "true", "west": "false"},
+          {"north": "false", "east": "false", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "false"},
+          {"north": "true", "east": "true", "south": "false", "west": "true"},
+          {"north": "true", "east": "false", "south": "true", "west": "true"},
+          {"north": "false", "east": "true", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "true"}
+        ]
+      },
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_post"}
     },
     {
       "when": {
-        "north": "true"
+        "OR": [
+          {"north": "true", "east": "false", "south": "false", "west": "false"},
+          {"north": "true", "east": "true", "south": "false", "west": "false"},
+          {"north": "true", "east": "false", "south": "false", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "false"},
+          {"north": "true", "east": "true", "south": "false", "west": "true"},
+          {"north": "true", "east": "false", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "true"}
+        ]
       },
-      "apply": {
-        "model": "sonicunnamedmod:block/palm_fence2",
-        "uvlock": true
-      }
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side", "uvlock": true}
     },
     {
       "when": {
-        "east": "true"
+        "OR": [
+          {"north": "false", "east": "true", "south": "false", "west": "false"},
+          {"north": "true", "east": "true", "south": "false", "west": "false"},
+          {"north": "false", "east": "true", "south": "true", "west": "false"},
+          {"north": "true", "east": "true", "south": "true", "west": "false"},
+          {"north": "true", "east": "true", "south": "false", "west": "true"},
+          {"north": "false", "east": "true", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "true"}
+        ]
       },
-      "apply": {
-        "model": "sonicunnamedmod:block/palm_fence2",
-        "uvlock": true,
-        "y": 90
-      }
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side", "y": 90, "uvlock": true}
     },
     {
       "when": {
-        "south": "true"
+        "OR": [
+          {"north": "false", "east": "false", "south": "true", "west": "false"},
+          {"north": "false", "east": "true", "south": "true", "west": "false"},
+          {"north": "false", "east": "false", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "false"},
+          {"north": "true", "east": "false", "south": "true", "west": "true"},
+          {"north": "false", "east": "true", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "true"}
+        ]
       },
-      "apply": {
-        "model": "sonicunnamedmod:block/palm_fence2",
-        "uvlock": true,
-        "y": 180
-      }
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side", "y": 180, "uvlock": true}
     },
     {
       "when": {
-        "west": "true"
+        "OR": [
+          {"north": "false", "east": "false", "south": "false", "west": "true"},
+          {"north": "true", "east": "false", "south": "false", "west": "true"},
+          {"north": "false", "east": "false", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "false", "west": "true"},
+          {"north": "true", "east": "false", "south": "true", "west": "true"},
+          {"north": "false", "east": "true", "south": "true", "west": "true"},
+          {"north": "true", "east": "true", "south": "true", "west": "true"}
+        ]
       },
-      "apply": {
-        "model": "sonicunnamedmod:block/palm_fence2",
-        "uvlock": true,
-        "y": 270
-      }
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side", "y": 270, "uvlock": true}
+    },
+    {
+      "when": {"north": "true", "east": "false", "south": "true", "west": "false"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_post"}
+    },
+    {
+      "when": {"north": "true", "east": "false", "south": "true", "west": "false"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "uvlock": true}
+    },
+    {
+      "when": {"north": "true", "east": "false", "south": "true", "west": "false"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 180, "uvlock": true}
+    },
+    {
+      "when": {"north": "false", "east": "true", "south": "false", "west": "true"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_post"}
+    },
+    {
+      "when": {"north": "false", "east": "true", "south": "false", "west": "true"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 90, "uvlock": true}
+    },
+    {
+      "when": {"north": "false", "east": "true", "south": "false", "west": "true"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 270, "uvlock": true}
     }
   ]
 }

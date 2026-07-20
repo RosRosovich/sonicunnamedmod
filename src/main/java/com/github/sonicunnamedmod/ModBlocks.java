@@ -154,6 +154,9 @@ public class ModBlocks {
     public static final Block PALM_FENCE_GATE = register("palm_fence_gate",
             new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
 
+    public static final Block PALM_DOOR = registerWithoutBlockItem("palm_door",
+            new PalmDoorBlock(AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
+
     public static final Block PALM_BUTTON = register("palm_button",
             new PalmButtonBlock(AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
 
@@ -320,6 +323,7 @@ public class ModBlocks {
             entries.add(PALM_STAIRS);
             entries.add(PALM_FENCE);
             entries.add(PALM_FENCE_GATE);
+            entries.add(ModItems.PALM_DOOR_ITEM);
             entries.add(PALM_BUTTON);
             entries.add(PALM_PRESSURE_PLATE);
             entries.add(ModItems.PALM_SIGN_ITEM);
