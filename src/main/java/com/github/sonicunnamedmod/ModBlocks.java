@@ -149,7 +149,7 @@ public class ModBlocks {
             new StairsBlock(PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
 
     public static final Block PALM_FENCE = register("palm_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+            new PalmFenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
 
     public static final Block PALM_FENCE_GATE = register("palm_fence_gate",
             new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
