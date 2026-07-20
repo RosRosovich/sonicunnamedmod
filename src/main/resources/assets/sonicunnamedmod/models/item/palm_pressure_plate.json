@@ -1,1 +1,3 @@
-{ "parent": "sonicunnamedmod:block/palm_pressure_plate" }
+{
+  "parent": "sonicunnamedmod:block/palm_pressure_plate"
+}

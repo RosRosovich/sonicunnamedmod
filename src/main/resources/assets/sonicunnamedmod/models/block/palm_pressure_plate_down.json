@@ -1,4 +1,6 @@
 {
   "parent": "minecraft:block/pressure_plate_down",
-  "textures": { "texture": "sonicunnamedmod:block/palm_planks" }
+  "textures": {
+    "texture": "sonicunnamedmod:block/palm_planks"
+  }
 }

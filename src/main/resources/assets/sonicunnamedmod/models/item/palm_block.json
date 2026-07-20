@@ -1,1 +1,3 @@
-{ "parent": "sonicunnamedmod:block/palm_block" }
+{
+  "parent": "sonicunnamedmod:block/palm_block"
+}
