@@ -38,6 +38,22 @@ public class ThornyPalmCoreBlock extends Block {
             Identifier.of(SonicUnnamedMod.MOD_ID, "palm_needles")
     );
     private static final VoxelShape SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+    private static final double PIXEL = 1.0 / 16.0;
+    private static final double NEEDLE_REACH = 3.0 * PIXEL;
+    private static final double CORNER_NEEDLE_REACH = 1.5 * PIXEL;
+    private static final Box[] NEEDLE_HITBOXES = {
+            // The two crossed planes protruding from the middle of every side.
+            new Box(7.0 * PIXEL, 0.0, -NEEDLE_REACH, 9.0 * PIXEL, 1.0, 0.0),
+            new Box(7.0 * PIXEL, 0.0, 1.0, 9.0 * PIXEL, 1.0, 1.0 + NEEDLE_REACH),
+            new Box(-NEEDLE_REACH, 0.0, 7.0 * PIXEL, 0.0, 1.0, 9.0 * PIXEL),
+            new Box(1.0, 0.0, 7.0 * PIXEL, 1.0 + NEEDLE_REACH, 1.0, 9.0 * PIXEL),
+
+            // The four short diagonal rows at the corners of the model.
+            new Box(-CORNER_NEEDLE_REACH, 0.0, -CORNER_NEEDLE_REACH, 0.0, 1.0, 0.0),
+            new Box(1.0, 0.0, -CORNER_NEEDLE_REACH, 1.0 + CORNER_NEEDLE_REACH, 1.0, 0.0),
+            new Box(-CORNER_NEEDLE_REACH, 0.0, 1.0, 0.0, 1.0, 1.0 + CORNER_NEEDLE_REACH),
+            new Box(1.0, 0.0, 1.0, 1.0 + CORNER_NEEDLE_REACH, 1.0, 1.0 + CORNER_NEEDLE_REACH)
+    };
 
     public ThornyPalmCoreBlock(Settings settings) {
         super(settings);
@@ -91,17 +107,24 @@ public class ThornyPalmCoreBlock extends Block {
     }
 
     private static boolean isTouchingThornyPalmCore(ServerWorld world, Entity entity) {
-        Box box = entity.getBoundingBox().expand(0.001);
-        int minX = MathHelper.floor(box.minX);
-        int minY = MathHelper.floor(box.minY);
-        int minZ = MathHelper.floor(box.minZ);
-        int maxX = MathHelper.floor(box.maxX);
-        int maxY = MathHelper.floor(box.maxY);
-        int maxZ = MathHelper.floor(box.maxZ);
+        Box entityBox = entity.getBoundingBox();
+        Box searchBox = entityBox.expand(NEEDLE_REACH);
+        int minX = MathHelper.floor(searchBox.minX);
+        int minY = MathHelper.floor(searchBox.minY);
+        int minZ = MathHelper.floor(searchBox.minZ);
+        int maxX = MathHelper.floor(searchBox.maxX);
+        int maxY = MathHelper.floor(searchBox.maxY);
+        int maxZ = MathHelper.floor(searchBox.maxZ);
 
         for (BlockPos blockPos : BlockPos.iterate(minX, minY, minZ, maxX, maxY, maxZ)) {
-            if (world.getBlockState(blockPos).isOf(ModBlocks.THORNY_PALM_CORE)) {
-                return true;
+            if (!world.getBlockState(blockPos).isOf(ModBlocks.THORNY_PALM_CORE)) {
+                continue;
+            }
+
+            for (Box needleHitbox : NEEDLE_HITBOXES) {
+                if (entityBox.intersects(needleHitbox.offset(blockPos))) {
+                    return true;
+                }
             }
         }
 
