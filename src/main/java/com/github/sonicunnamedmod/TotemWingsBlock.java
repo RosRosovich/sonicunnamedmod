@@ -19,10 +19,10 @@ public class TotemWingsBlock extends TotemBlock {
     private static final VoxelShape EAST_SHAPE = Block.createCuboidShape(7, 2, 0, 9, 14, 15);
     private static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(1, 2, 7, 16, 14, 9);
     private static final VoxelShape WEST_SHAPE = Block.createCuboidShape(7, 2, 1, 9, 14, 16);
-    private static final VoxelShape FLOOR_NORTH_SHAPE = Block.createCuboidShape(0, 0, 0, 14, 2, 12);
-    private static final VoxelShape FLOOR_EAST_SHAPE = Block.createCuboidShape(4, 0, 0, 16, 2, 14);
-    private static final VoxelShape FLOOR_SOUTH_SHAPE = Block.createCuboidShape(2, 0, 4, 16, 2, 16);
-    private static final VoxelShape FLOOR_WEST_SHAPE = Block.createCuboidShape(0, 0, 2, 12, 2, 16);
+    private static final VoxelShape FLOOR_NORTH_SHAPE = Block.createCuboidShape(0, 0, 2, 14, 2, 14);
+    private static final VoxelShape FLOOR_EAST_SHAPE = Block.createCuboidShape(2, 0, 0, 14, 2, 14);
+    private static final VoxelShape FLOOR_SOUTH_SHAPE = Block.createCuboidShape(2, 0, 2, 16, 2, 14);
+    private static final VoxelShape FLOOR_WEST_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 2, 16);
 
     public TotemWingsBlock(Settings settings) {
         super(settings);

@@ -1,0 +1,59 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "minecraft:block/block",
+  "texture_size": [64, 64],
+  "textures": {
+    "0": "sonicunnamedmod:block/totem_wings",
+    "particle": "sonicunnamedmod:block/totem_wings"
+  },
+  "elements": [
+    {
+      "from": [0, 1, 2],
+      "to": [14, 1, 8],
+      "faces": {
+        "up": {"uv": [3.5, 0, 7, 1.5], "texture": "#0"},
+        "east": {"uv": [0, 0, 0, 1.5], "rotation": 90, "texture": "#0"},
+        "down": {"uv": [0, 0, 3.5, 1.5], "rotation": 180, "texture": "#0"},
+        "west": {"uv": [3.5, 0, 3.5, 1.5], "rotation": 270, "texture": "#0"},
+        "north": {"uv": [3.5, 0, 0, 0], "rotation": 180, "texture": "#0"},
+        "south": {"uv": [7, 0, 3.5, 0], "texture": "#0"}
+      }
+    },
+    {
+      "from": [0, 0, 2],
+      "to": [11, 2, 7],
+      "faces": {
+        "up": {"uv": [3.75, 2, 6.5, 3.25], "texture": "#0"},
+        "east": {"uv": [0, 2, 0.5, 3.25], "rotation": 90, "texture": "#0"},
+        "down": {"uv": [0.5, 2, 3.25, 3.25], "rotation": 180, "texture": "#0"},
+        "west": {"uv": [3.25, 2, 3.75, 3.25], "rotation": 270, "texture": "#0"},
+        "north": {"uv": [3.25, 2, 0.5, 1.5], "rotation": 180, "texture": "#0"},
+        "south": {"uv": [6, 1.5, 3.25, 2], "texture": "#0"}
+      }
+    },
+    {
+      "from": [0, 1, 9],
+      "to": [9, 1, 14],
+      "faces": {
+        "up": {"uv": [6.75, 3.25, 9, 4.5], "texture": "#0"},
+        "east": {"uv": [4.5, 3.25, 4.5, 4.5], "rotation": 90, "texture": "#0"},
+        "down": {"uv": [4.5, 3.25, 6.75, 4.5], "rotation": 180, "texture": "#0"},
+        "west": {"uv": [6.75, 3.25, 6.75, 4.5], "rotation": 270, "texture": "#0"},
+        "north": {"uv": [6.75, 3.25, 4.5, 3.25], "rotation": 180, "texture": "#0"},
+        "south": {"uv": [9, 3.25, 6.75, 3.25], "texture": "#0"}
+      }
+    },
+    {
+      "from": [0, 0, 9],
+      "to": [7, 2, 13],
+      "faces": {
+        "up": {"uv": [2.75, 3.75, 4.5, 4.75], "texture": "#0"},
+        "east": {"uv": [0, 3.75, 0.5, 4.75], "rotation": 90, "texture": "#0"},
+        "down": {"uv": [0.5, 3.75, 2.25, 4.75], "rotation": 180, "texture": "#0"},
+        "west": {"uv": [2.25, 3.75, 2.75, 4.75], "rotation": 270, "texture": "#0"},
+        "north": {"uv": [2.25, 3.75, 0.5, 3.25], "rotation": 180, "texture": "#0"},
+        "south": {"uv": [4, 3.25, 2.25, 3.75], "texture": "#0"}
+      }
+    }
+  ]
+}

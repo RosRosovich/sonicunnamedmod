@@ -16,18 +16,18 @@
       "y": 270
     },
     "facing=north,wall=false": {
-      "model": "sonicunnamedmod:block/totem_wings_floor"
+      "model": "sonicunnamedmod:block/bottom_wings"
     },
     "facing=east,wall=false": {
-      "model": "sonicunnamedmod:block/totem_wings_floor",
+      "model": "sonicunnamedmod:block/bottom_wings",
       "y": 90
     },
     "facing=south,wall=false": {
-      "model": "sonicunnamedmod:block/totem_wings_floor",
+      "model": "sonicunnamedmod:block/bottom_wings",
       "y": 180
     },
     "facing=west,wall=false": {
-      "model": "sonicunnamedmod:block/totem_wings_floor",
+      "model": "sonicunnamedmod:block/bottom_wings",
       "y": 270
     }
   }
