@@ -6,22 +6,21 @@
     },
     {
       "when": {
-        "OR": [
-          {"up": "false", "north": "low", "east": "none", "south": "low", "west": "none"},
-          {"up": "false", "north": "none", "east": "low", "south": "none", "west": "low"}
-        ]
+        "up": "false",
+        "north": "none|low",
+        "east": "none|low",
+        "south": "none|low",
+        "west": "none|low"
       },
       "apply": {"model": "sonicunnamedmod:block/palm_fence2_post"}
     },
     {
       "when": {
         "OR": [
-          {"up": "false", "north": "tall", "east": "none", "south": "low", "west": "none"},
-          {"up": "false", "north": "low", "east": "none", "south": "tall", "west": "none"},
-          {"up": "false", "north": "tall", "east": "none", "south": "tall", "west": "none"},
-          {"up": "false", "north": "none", "east": "tall", "south": "none", "west": "low"},
-          {"up": "false", "north": "none", "east": "low", "south": "none", "west": "tall"},
-          {"up": "false", "north": "none", "east": "tall", "south": "none", "west": "tall"}
+          {"up": "false", "north": "tall"},
+          {"up": "false", "east": "tall"},
+          {"up": "false", "south": "tall"},
+          {"up": "false", "west": "tall"}
         ]
       },
       "apply": {"model": "sonicunnamedmod:block/palm_fence3_post"}

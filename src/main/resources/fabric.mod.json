@@ -15,6 +15,9 @@
       "com.github.sonicunnamedmod.ModBlocksClient"
     ]
   },
+  "mixins": [
+    "sonicunnamedmod.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.15.0",
     "fabric": "*",
