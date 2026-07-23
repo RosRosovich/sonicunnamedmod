@@ -3,6 +3,7 @@ package com.github.sonicunnamedmod;
 import net.minecraft.item.HangingSignItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SignItem;
+import net.minecraft.item.TallBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -19,6 +20,9 @@ public class ModItems {
 
     public static final Item PALM_SIGN_ITEM = register("palm_sign",
             new SignItem(new Item.Settings().maxCount(16), ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN));
+
+    public static final Item PALM_DOOR_ITEM = register("palm_door",
+            new TallBlockItem(ModBlocks.PALM_DOOR, new Item.Settings()));
 
     public static void registerAll() {
     }

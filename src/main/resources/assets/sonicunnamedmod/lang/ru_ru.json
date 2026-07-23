@@ -1,5 +1,6 @@
 {
   "itemGroup.sonicunnamedmod.blocks": "SonicUnnamedMod",
+  "block.sonicunnamedmod.palm_door": "\u041f\u0430\u043b\u044c\u043c\u043e\u0432\u0430\u044f \u0434\u0432\u0435\u0440\u044c",
   "death.attack.metal_spike": "%1$s напоролся на металлические шипы",
   "death.attack.wooden_spike": "%1$s напоролся на деревянные шипы",
   "death.attack.palm_needles": "%1$s укололся о пальмовые иглы",

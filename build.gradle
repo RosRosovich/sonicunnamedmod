@@ -1,9 +1,9 @@
 plugins {
-    id 'fabric-loom' version '1.7.3'
+    id 'fabric-loom' version '1.17-SNAPSHOT'
     id 'maven-publish'
 }
 
-version = '0.0.17'
+version = '0.0.21'
 group = 'github.sonicunnamedmod'
 
 repositories {

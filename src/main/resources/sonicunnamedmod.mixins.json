@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.github.sonicunnamedmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "WallBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

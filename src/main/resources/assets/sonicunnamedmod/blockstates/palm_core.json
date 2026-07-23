@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "sonicunnamedmod:block/palm_core" }
+    "": {
+      "model": "sonicunnamedmod:block/palm_core"
+    }
   }
 }

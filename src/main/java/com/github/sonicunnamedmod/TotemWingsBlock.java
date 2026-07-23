@@ -10,19 +10,31 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 public class TotemWingsBlock extends TotemBlock {
     public static final BooleanProperty WALL = BooleanProperty.of("wall");
 
-    private static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0, 2, 7, 15, 14, 9);
-    private static final VoxelShape EAST_SHAPE = Block.createCuboidShape(7, 2, 0, 9, 14, 15);
-    private static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(1, 2, 7, 16, 14, 9);
-    private static final VoxelShape WEST_SHAPE = Block.createCuboidShape(7, 2, 1, 9, 14, 16);
-    private static final VoxelShape FLOOR_NORTH_SHAPE = Block.createCuboidShape(0, 0, 0, 14, 2, 12);
-    private static final VoxelShape FLOOR_EAST_SHAPE = Block.createCuboidShape(4, 0, 0, 16, 2, 14);
-    private static final VoxelShape FLOOR_SOUTH_SHAPE = Block.createCuboidShape(2, 0, 4, 16, 2, 16);
-    private static final VoxelShape FLOOR_WEST_SHAPE = Block.createCuboidShape(0, 0, 2, 12, 2, 16);
+    private static final VoxelShape NORTH_SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(0, 8, 7.5, 15, 14, 8.5),
+            Block.createCuboidShape(0, 9, 7, 12, 14, 9),
+            Block.createCuboidShape(0, 2, 7.5, 10, 7, 8.5),
+            Block.createCuboidShape(0, 3, 7, 8, 7, 9)
+    );
+    private static final VoxelShape EAST_SHAPE = rotateYClockwise(NORTH_SHAPE);
+    private static final VoxelShape SOUTH_SHAPE = rotateYClockwise(EAST_SHAPE);
+    private static final VoxelShape WEST_SHAPE = rotateYClockwise(SOUTH_SHAPE);
+
+    private static final VoxelShape FLOOR_NORTH_SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(0, 0.5, 2, 14, 1.5, 8),
+            Block.createCuboidShape(0, 0, 2, 11, 2, 7),
+            Block.createCuboidShape(0, 0.5, 9, 9, 1.5, 14),
+            Block.createCuboidShape(0, 0, 9, 7, 2, 13)
+    );
+    private static final VoxelShape FLOOR_EAST_SHAPE = rotateYClockwise(FLOOR_NORTH_SHAPE);
+    private static final VoxelShape FLOOR_SOUTH_SHAPE = rotateYClockwise(FLOOR_EAST_SHAPE);
+    private static final VoxelShape FLOOR_WEST_SHAPE = rotateYClockwise(FLOOR_SOUTH_SHAPE);
 
     public TotemWingsBlock(Settings settings) {
         super(settings);
@@ -80,5 +92,16 @@ public class TotemWingsBlock extends TotemBlock {
             case WEST -> WEST_SHAPE;
             default -> NORTH_SHAPE;
         };
+    }
+
+    private static VoxelShape rotateYClockwise(VoxelShape shape) {
+        VoxelShape[] rotated = {VoxelShapes.empty()};
+        shape.forEachBox((minX, minY, minZ, maxX, maxY, maxZ) ->
+                rotated[0] = VoxelShapes.union(rotated[0], VoxelShapes.cuboid(
+                        1.0 - maxZ, minY, minX,
+                        1.0 - minZ, maxY, maxX
+                ))
+        );
+        return rotated[0];
     }
 }

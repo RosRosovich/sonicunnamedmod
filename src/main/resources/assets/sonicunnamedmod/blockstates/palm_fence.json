@@ -1,9 +1,97 @@
 {
   "multipart": [
-    { "apply": { "model": "sonicunnamedmod:block/palm_fence_post" } },
-    { "when": { "north": "true" }, "apply": { "model": "sonicunnamedmod:block/palm_fence_side", "uvlock": true } },
-    { "when": { "east": "true" }, "apply": { "model": "sonicunnamedmod:block/palm_fence_side", "uvlock": true, "y": 90 } },
-    { "when": { "south": "true" }, "apply": { "model": "sonicunnamedmod:block/palm_fence_side", "uvlock": true, "y": 180 } },
-    { "when": { "west": "true" }, "apply": { "model": "sonicunnamedmod:block/palm_fence_side", "uvlock": true, "y": 270 } }
+    {
+      "when": {"up": "true"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_post"}
+    },
+    {
+      "when": {
+        "up": "false",
+        "north": "none|low",
+        "east": "none|low",
+        "south": "none|low",
+        "west": "none|low"
+      },
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_post"}
+    },
+    {
+      "when": {
+        "OR": [
+          {"up": "false", "north": "tall"},
+          {"up": "false", "east": "tall"},
+          {"up": "false", "south": "tall"},
+          {"up": "false", "west": "tall"}
+        ]
+      },
+      "apply": {"model": "sonicunnamedmod:block/palm_fence3_post"}
+    },
+    {
+      "when": {
+        "OR": [
+          {"up": "true", "north": "low"},
+          {"up": "true", "north": "tall"}
+        ]
+      },
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side"}
+    },
+    {
+      "when": {
+        "OR": [
+          {"up": "true", "east": "low"},
+          {"up": "true", "east": "tall"}
+        ]
+      },
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side_east"}
+    },
+    {
+      "when": {
+        "OR": [
+          {"up": "true", "south": "low"},
+          {"up": "true", "south": "tall"}
+        ]
+      },
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side_south"}
+    },
+    {
+      "when": {
+        "OR": [
+          {"up": "true", "west": "low"},
+          {"up": "true", "west": "tall"}
+        ]
+      },
+      "apply": {"model": "sonicunnamedmod:block/palm_fence1_side_west"}
+    },
+    {
+      "when": {"up": "false", "north": "low"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "uvlock": true}
+    },
+    {
+      "when": {"up": "false", "east": "low"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 90, "uvlock": true}
+    },
+    {
+      "when": {"up": "false", "south": "low"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 180, "uvlock": true}
+    },
+    {
+      "when": {"up": "false", "west": "low"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 270, "uvlock": true}
+    },
+    {
+      "when": {"up": "false", "north": "tall"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "uvlock": true}
+    },
+    {
+      "when": {"up": "false", "east": "tall"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 90, "uvlock": true}
+    },
+    {
+      "when": {"up": "false", "south": "tall"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 180, "uvlock": true}
+    },
+    {
+      "when": {"up": "false", "west": "tall"},
+      "apply": {"model": "sonicunnamedmod:block/palm_fence2_side", "y": 270, "uvlock": true}
+    }
   ]
 }
