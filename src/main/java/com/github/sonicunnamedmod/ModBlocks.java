@@ -211,6 +211,15 @@ public class ModBlocks {
             )
     );
 
+    public static final Block PALM_SAPLING = registerWithoutBlockItem("palm_sapling",
+            new PalmSaplingBlock(AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+                    .nonOpaque()
+                    .noCollision()
+                    .ticksRandomly()
+                    .strength(0.0f)
+                    .sounds(BlockSoundGroup.GRASS)
+            )
+    );
     public static Block MARBLE_TILES_GRASS_BLOCK;
     public static Block MARBLE_BRICKS_GRASS_BLOCK;
     public static Block POLISHED_MARBLE_GRASS_BLOCK;
@@ -222,6 +231,9 @@ public class ModBlocks {
         Identifier sunflowerId = Identifier.of(SonicUnnamedMod.MOD_ID, "green_hill_sunflower");
         Item sunflowerItem = Registry.register(Registries.ITEM, sunflowerId,
                 new TallBlockItem(GREEN_HILL_SUNFLOWER, new Item.Settings()));
+        Identifier saplingId = Identifier.of(SonicUnnamedMod.MOD_ID, "palm_sapling");
+        Item saplingItem = Registry.register(Registries.ITEM, saplingId,
+                new BlockItem(PALM_SAPLING, new Item.Settings()));
     }
 
     public static void registerAll() {
@@ -308,6 +320,7 @@ public class ModBlocks {
 
             entries.add(PALM_LOG);
             entries.add(PALM_LEAVES);
+            entries.add(PALM_SAPLING);
             entries.add(PALM_CORE);
             entries.add(STRIPPED_PALM_CORE);
             entries.add(THORNY_PALM_CORE);

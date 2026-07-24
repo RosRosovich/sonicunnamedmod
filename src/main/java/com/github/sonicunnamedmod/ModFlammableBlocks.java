@@ -14,6 +14,9 @@ public class ModFlammableBlocks {
         fire.registerFlammableBlock(ModBlocks.STRIPPED_PALM_BLOCK, 5, 5);
         fire.registerFlammableBlock(ModBlocks.STRIPPED_PALM_WOOD, 5, 5);
 
+        fire.registerFlammableBlock(ModBlocks.PALM_LEAVES, 5, 5);
+        fire.registerFlammableBlock(ModBlocks.PALM_SAPLING, 5, 5);
+
         fire.registerFlammableBlock(ModBlocks.PALM_PLANKS, 5, 20);
         fire.registerFlammableBlock(ModBlocks.PALM_SLAB, 5, 20);
         fire.registerFlammableBlock(ModBlocks.PALM_STAIRS, 5, 20);

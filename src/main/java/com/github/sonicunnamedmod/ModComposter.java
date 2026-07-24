@@ -12,6 +12,7 @@ public class ModComposter {
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.GREEN_HILL_SUNFLOWER.asItem(), 0.65F);
 
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.PALM_LEAVES.asItem(), 0.30F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.PALM_SAPLING.asItem(), 0.30F);
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.PALM_THORN, 0.30F);
     }
 }

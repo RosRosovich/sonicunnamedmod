@@ -56,7 +56,7 @@ public final class ModTrades {
                     new TradeOffer(
                             new TradedItem(Items.EMERALD, 2),
                             new ItemStack(ModBlocks.PALM_LEAVES, 8),
-                            8,
+                            4,
                             1,
                             0.05F
                     )
@@ -66,7 +66,7 @@ public final class ModTrades {
                     new TradeOffer(
                             new TradedItem(Items.EMERALD, 2),
                             new ItemStack(ModBlocks.PALM_THORN, 8),
-                            8,
+                            3,
                             1,
                             0.05F
                     )
@@ -87,6 +87,16 @@ public final class ModTrades {
                             new TradedItem(Items.EMERALD, 3),
                             new ItemStack(ModBlocks.THORNY_PALM_CORE, 2),
                             8,
+                            1,
+                            0.05F
+                    )
+            );
+
+            factories.add((entity, random) ->
+                    new TradeOffer(
+                            new TradedItem(Items.EMERALD, 5),
+                            new ItemStack(ModBlocks.PALM_SAPLING, 3),
+                            5,
                             1,
                             0.05F
                     )

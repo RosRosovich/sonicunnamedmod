@@ -6,8 +6,11 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.TallPlantBlock;
 import net.minecraft.block.enums.DoubleBlockHalf;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
@@ -41,14 +44,18 @@ public class GreenHillVegetationFeature extends Feature<DefaultFeatureConfig> {
         }
 
         BlockPos groundPos = origin.down();
-        if (world.isAir(groundPos) || world.getBlockState(groundPos).isOf(Blocks.WATER)) {
+        BlockState groundState = world.getBlockState(groundPos);
+
+        if (!isValidGround(groundState, world, groundPos)) {
             return false;
         }
 
         if (random.nextFloat() < 0.05f) {
             BlockPos flowerPos = origin;
             if (world.isAir(flowerPos) && world.isAir(flowerPos.up())) {
-                world.setBlockState(flowerPos, ModBlocks.GREEN_HILL_SUNFLOWER.getDefaultState(), 3);
+                world.setBlockState(flowerPos,
+                        ModBlocks.GREEN_HILL_SUNFLOWER.getDefaultState()
+                                .with(Properties.HORIZONTAL_FACING, Direction.EAST), 3);
                 return true;
             }
             return false;
@@ -74,5 +81,19 @@ public class GreenHillVegetationFeature extends Feature<DefaultFeatureConfig> {
         }
 
         return false;
+    }
+
+    private boolean isValidGround(BlockState state, BlockView world, BlockPos pos) {
+        return state.isOf(Blocks.GRASS_BLOCK)
+                || state.isOf(Blocks.DIRT)
+                || state.isOf(Blocks.COARSE_DIRT)
+                || state.isOf(Blocks.PODZOL)
+                || state.isOf(Blocks.ROOTED_DIRT)
+                || state.isOf(Blocks.MYCELIUM)
+                || state.isOf(ModBlocks.GREEN_HILL_GRASS_BLOCK)
+                || state.isOf(ModBlocks.GREEN_HILL_DIRT)
+                || state.isOf(ModBlocks.MARBLE_TILES_GRASS_BLOCK)
+                || state.isOf(ModBlocks.MARBLE_BRICKS_GRASS_BLOCK)
+                || state.isOf(ModBlocks.POLISHED_MARBLE_GRASS_BLOCK);
     }
 }
